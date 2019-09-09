@@ -1,3 +1,54 @@
-.body {
-	margin-top: 5em;
+#navbarMain {
+	background-color: #0f0f0f !important;
+}
+
+a.navbar-brand span {
+	color: #04ffa8;
+}
+
+body {
+	background-color: #131313;
+	color: white;
+}
+
+.headings {
+	font-weight: 200;
+}
+
+.homepage-tabs {
+	width: 9em;
+}
+
+.now-showing {
+	color: white;
+	font-weight: 200;
+}
+
+/*.nav-pills .homepage-tabs {
+	color: black !important;
+}
+
+.nav-pills .homepage-tabs.active {
+	color: white !important;
+	background-color: #343a40 !important;
+}*/
+.btn-outline-light.homepage-tabs {
+	color: darkgray;
+}
+
+.btn-outline-light.homepage-tabs:hover {
+	color: black;
+}
+
+.carousel-inner {
+	height: 45vh;
+}
+
+.homepage-movie-cards, .seat-cards {
+	border-width: 0px;
+	background-color: inherit !important;
+}
+
+.seat-cards .card-img {
+	border-radius: calc(.8rem - .5px);
 }
