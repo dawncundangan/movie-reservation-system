@@ -2,7 +2,9 @@
 	background-color: #131313;
 	/*color: white;*/
 }
-
+.third{
+  color: white;
+}
 select {
     -webkit-appearance: button;
     -moz-appearance: button;
