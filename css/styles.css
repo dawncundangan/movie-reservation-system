@@ -1,3 +1,4 @@
+/* Navbar */
 #navbarMain {
 	background-color: #0f0f0f !important;
 }
@@ -6,11 +7,13 @@ a.navbar-brand span {
 	color: #04ffa8;
 }
 
+/* Body */
 body {
 	background-color: #131313;
 	color: white;
 }
 
+/* Home page */
 .headings {
 	font-weight: 200;
 }
@@ -24,14 +27,6 @@ body {
 	font-weight: 200;
 }
 
-/*.nav-pills .homepage-tabs {
-	color: black !important;
-}
-
-.nav-pills .homepage-tabs.active {
-	color: white !important;
-	background-color: #343a40 !important;
-}*/
 .btn-outline-light.homepage-tabs {
 	color: darkgray;
 }
@@ -44,11 +39,49 @@ body {
 	height: 45vh;
 }
 
+.movies-now-showing {
+	opacity: 0;
+}
+
+.movies-now-showing:hover {
+	transition: .25s ease;
+	background-color: #13131375;
+	opacity: 1;
+}
+
+.showing-datetime {
+	font-size: .8em;
+}
+
 .homepage-movie-cards, .seat-cards {
 	border-width: 0px;
 	background-color: inherit !important;
 }
 
+/* Seatplan */
+
 .seat-cards .card-img {
 	border-radius: calc(.8rem - .5px);
+}
+
+.seat-number p {
+	font-weight: 350;
+	font-family: monospace;
+	color: #ffffff63;
+}
+
+.seat-cards p:hover {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#cinemaScreen {
+	background-color: #bababa;
+	height: 1.5em;
+}
+
+@media screen and (min-width: 640px) {
+  #seatPlan {
+    max-height: 75vh;
+  }
 }

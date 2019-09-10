@@ -11,6 +11,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <!-- styles.css -->
+    <link href="css/styles.css" rel="stylesheet">
+
     <title>Cinema World - Homepage </title>
 
     <!-- Navbar -->
@@ -89,52 +92,176 @@
       <div class="container row px-5 mx-0 mt-1">
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/moana.jpg" class="card-img">
-          <!--div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Now showing</p>
-            <button class="btn btn-sm btn-info"> View details </button>
-            <button class="btn btn-sm btn-success"> Buy ticket </button>
-          </div-->  
+          <div class="card-img-overlay text-center movies-now-showing">
+              <div class="pt-sm-2 pt-m-1">
+                <h4>Moana</h4>
+                <p class="showing-datetime mb-0">Now Showing</p> 
+                <p class="showing-datetime my-0">2h 1min</p>
+                <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+              </div>
+              <div class="pt-sm-5 pt-md-3">
+                <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+              </div>
+            </div> 
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/wrinkle-in-time.jpg" class="card-img">
+            <div class="card-img-overlay text-center movies-now-showing">
+              <div class="pt-sm-2 pt-m-1">
+                <h4>A Wrinkle in Time</h4>
+                <p class="showing-datetime mb-0">Now Showing</p> 
+                <p class="showing-datetime my-0">1h 57mins</p>
+                <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+              </div>
+              <div class="pt-sm-5 pt-md-3">
+                <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+              </div>
+            </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/enchanted.jpg" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+              <div class="pt-sm-2 pt-m-1">
+                <h4>Enchanted</h4>
+                <p class="showing-datetime mb-0">Now Showing</p> 
+                <p class="showing-datetime my-0">2h 07mins</p>
+                <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+              </div>
+              <div class="pt-sm-5 pt-md-3">
+                <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+              </div>
+            </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/lion-king.jpg" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Lion King</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 07mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
-          <img src="imgs/aladin.jpg" class="card-img">
+          <img src="imgs/aladdin.jpg" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Aladdin</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 13mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/ant-man.jfif" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Ant Man</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 30mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div>  
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/infinity-war.jfif" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Infinity War</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 59mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/guardians-of-the-galaxy.jfif" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h5>Guardians of the Galaxy</h5>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 45mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/captain-marvel.jfif" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Captain Marvel</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 50mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/tron.jfif" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Tron</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 05mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
           <img src="imgs/tangled.jpg" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h4>Tangled</h4>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">1h 45mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
         <div class="card col-md-2 col-sm-6 px-1 my-1 homepage-movie-cards">
-          <img src="imgs/aladin.jpg" class="card-img">
+          <img src="imgs/beauty-and-the-beast.jfif" class="card-img">
+          <div class="card-img-overlay text-center movies-now-showing">
+            <div class="pt-sm-2 pt-m-1">
+              <h5>Beauty and the Beast</h5>
+              <p class="showing-datetime mb-0">Now Showing</p> 
+              <p class="showing-datetime my-0">2h 10mins</p>
+              <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
+            </div>
+            <div class="pt-sm-5 pt-md-3">
+              <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+            </div>
+          </div>
         </div> 
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <link href="css/styles.css" rel="stylesheet">
   </body>
 </html>
