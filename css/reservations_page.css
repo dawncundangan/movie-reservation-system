@@ -1,0 +1,71 @@
+.colorbody {
+	background-color: #131313;
+	/*color: white;*/
+}
+/* not active */
+.container-image {
+  position: relative;
+  width: 50%;
+}
+
+.dropdown{
+	display: inline-block;
+	position: relative;
+}
+.badge-class{
+	float: right;
+}
+.button5:hover {
+  background-color: black;
+  color: white;
+}
+.button {
+  background-color: transparent; /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.button-class{
+	margin-top: 10px;
+	border-radius: 2%;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-image:hover .image {
+  opacity: 0.3;
+}
+
+.container-image:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+}

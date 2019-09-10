@@ -2,15 +2,190 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Reservation System</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
-
+<title>Reservation_page</title>
+<link rel="stylesheet" href="css/reservations_page.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<nav class="navbar-expand-md navbar-dark fixed-top bg-dark p-1" id="navbarMain">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row px-5">
+        <a class="navbar-brand align-items-center" href="#">
+          <img src="imgs/temp-icon.png" width="30" height="30"> 
+          <!--span> Cinema World </span-->
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto px-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservations_page.html">Reservation</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 </head>
-
-<body>
-
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+<body class="mt-5 pt-3 colorbody">
+<div class="container">
+	<ul class="nav nav-pills nav-justified" role="tablist">
+  		<li class="nav-item pill-1">
+    		<a class="nav-link active" data-toggle="pill" href="#pill-1">Comedy</a>
+  		</li>
+  		<li class="nav-item pill-2">
+   			<a class="nav-link" data-toggle="pill" href="#pill-2">Romance</a>
+  		</li>
+  		<li class="nav-item pill-3">
+    		<a class="nav-link" data-toggle="pill" href="#pill-3">Action</a>
+  		</li>
+  		<li class="nav-item pill-4">
+    		<a class="nav-link" data-toggle="pill" href="#pill-4">Fantasy</a>
+  		</li>
+  		<li class="nav-item pill-5">
+    		<a class="nav-link" data-toggle="pill" href="#pill-5">Family</a>
+  		</li>
+  		<li class="nav-item pill-6">
+    		<a class="nav-link" data-toggle="pill" href="#pill-6">Others</a>
+  		</li>
+	</ul>
+	<div class="tab-content">
+    <div id="pill-1" class="container tab-pane active"><br>
+      	<div class="row text-center text-lg-left">
+			<div class="col-lg-3 col-md-4 col-6 container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/ant-man.jfif" alt="">
+            		<div class="middle">
+    					<div class="text">
+    						<h3>Ant-Man</h3>
+    						<h9 id="date">Sep 20, 2019 | 1h 57mins</h9><br>
+    						<span class="badge badge-dark">PG-13</span><br>
+    						<button class="button button5" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    		</div>
+    		<div class="col-lg-3 col-md-4 col-6">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/captain-marvel.jfif" alt="">
+          		</a>
+    		</div>
+    		<div class="col-lg-3 col-md-4 col-6">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/guardians-of-the-galaxy.jfif" alt="">
+          		</a>
+    		</div>
+    		<div class="col-lg-3 col-md-4 col-6">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/infinity-war.jfif" alt="">
+          		</a>
+    		</div>
+		</div>
+    </div>
+    <div id="pill-2" class="container tab-pane fade"><br>
+      <h3>Romance</h3>
+    </div>
+    <div id="pill-3" class="container tab-pane fade"><br>
+      <h3>Action</h3>
+    </div>
+    <div id="pill-4" class="container tab-pane fade"><br>
+      <h3>Fantasy</h3>
+    </div>
+    <div id="pill-5" class="container tab-pane fade"><br>
+      <h3>Family</h3>
+    </div>
+    <div id="pill-6" class="container tab-pane fade"><br>
+      <h3>Others</h3>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="reserve1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Ant-man</h4>
+        </div>
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h3><b>Ant-Man</b><span class="badge badge-dark badge-class">PG-13</span></h3><br>
+    				<h6 id="date">Sep 20, 2019 | 1h 57mins</h6><br>
+    				<p>Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.</p>
+    				
+  					<!-- <form>
+    				<div class="dropdown">
+    					<select name="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 30">Sep 30</option>
+  							<option value="Oct 05">Oct 05</option>
+						</select>
+    					<select name="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">10:00 AM</option>
+  							<option value="1:00 PM">1:00 PM</option>
+  							<option value="2:30 PM">2:30 PM</option>
+  							<option value="7:00 PM">7:00 PM</option>
+						</select>
+					<button type="button" class="btn btn-default">Reserve</button>
+				</form> -->
+    			</div>
+  				<div class="col-sm-4"><img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/ant-man.jfif" alt="">
+    			</div>
+    			<hr>
+    			<div class="dropdown">
+    					<button class="btn btn-default dropdown-toggle" type="button" id="cinema" data-toggle="dropdown">Cinema Number
+    					<span class="caret"></span></button>
+    						<ul class="dropdown-menu" role="menu" aria-labelledby="cinema">
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 1</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 2</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 3</a></li>
+      						<!-- <li role="presentation" class="divider"></li> -->
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 4</a></li>
+    						</ul>
+    					<button class="btn btn-default dropdown-toggle" type="button" id="datedate" data-toggle="dropdown">Cinema Number
+    					<span class="caret"></span></button>
+    						<ul class="dropdown-menu" role="menu" aria-labelledby="datedate">
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sep 20</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sep 21</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sep 30</a></li>
+      						<!-- <li role="presentation" class="divider"></li> -->
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oct 5</a></li>
+    						</ul>
+    					<button class="btn btn-default dropdown-toggle" type="button" id="timetime" data-toggle="dropdown">Cinema Number
+    					<span class="caret"></span></button>
+    						<ul class="dropdown-menu" role="menu" aria-labelledby="timetime">
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10:00 AM</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">1:00 PM</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">2:30 PM</a></li>
+      						<!-- <li role="presentation" class="divider"></li> -->
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">7:00 PM</a></li>
+    						</ul>
+  				</div>
+			</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default">Reserve</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
