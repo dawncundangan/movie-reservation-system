@@ -87,8 +87,8 @@ body {
 }
 
 #cinemaScreen {
-	background-color: #bababa;
-	height: 1.5em;
+	background-color: #cffff3;
+	height: 1.25em;
 }
 
 .popcorn {
@@ -112,6 +112,16 @@ body {
 .legend-available {
 	background-color: #e20b1c;
 	height: 1.25em;
+}
+
+hr {
+	border-color: white;
+}
+
+.form-control-plaintext, #totalAmount {
+	color: white;
+	font-size: 1.5em;
+	font-weight: 200;
 }
 
 @media screen and (min-width: 640px) {
