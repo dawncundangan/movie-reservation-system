@@ -16,11 +16,11 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto px-2">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="reservations_page.html">Reservation</a>
+              <a class="nav-link" href="#">Home</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="reservations_page.html">Reservation<span class="sr-only">(current)</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -33,12 +33,51 @@
 </head>
 <body class="mt-5 pt-3 colorbody">
 <div class="container">
-	<ul class="nav nav-pills nav-justified" role="tablist">
+	<table class="table table-striped table-dark rounded" id="reserves">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Movie Title</th>
+      <th scope="col">Cinema Number</th>
+      <th scope="col">Date</th>
+      <th scope="col">Time</th>
+      <th scope="col">Seat No.</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>TRON: Legacy</td>
+      <td>Cinema 1</td>
+      <td>Sep 15</td>
+      <td>08:00 PM</td>
+      <td>Seat 1</td>
+      <td><button type="button" class="btn btn-default button2">Cancel</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Ant-man</td>
+      <td>Cinema 2</td>
+      <td>Sep 16</td>
+      <td>08:00 PM</td>
+      <td>Seat 2</td>
+      <td><button type="button" class="btn btn-default button2">Cancel</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Moana</td>
+      <td>Cinema 1</td>
+      <td>Sep 18</td>
+      <td>08:00 PM</td>
+      <td>Seat 3</td>
+      <td><button type="button" class="btn btn-default button2">Cancel</button></td>
+    </tr>
+  </tbody>
+</table>
+	<ul class="nav nav-pills justify-content-center" role="tablist">
   		<li class="nav-item pill-1">
-    		<a class="nav-link active" data-toggle="pill" href="#pill-1">Comedy</a>
-  		</li>
-  		<li class="nav-item pill-2">
-   			<a class="nav-link" data-toggle="pill" href="#pill-2">Romance</a>
+    		<a class="nav-link active" data-toggle="pill" href="#pill-1">Romance</a>
   		</li>
   		<li class="nav-item pill-3">
     		<a class="nav-link" data-toggle="pill" href="#pill-3">Action</a>
@@ -49,142 +88,854 @@
   		<li class="nav-item pill-5">
     		<a class="nav-link" data-toggle="pill" href="#pill-5">Family</a>
   		</li>
-  		<li class="nav-item pill-6">
-    		<a class="nav-link" data-toggle="pill" href="#pill-6">Others</a>
-  		</li>
 	</ul>
 	<div class="tab-content">
-    <div id="pill-1" class="container tab-pane active"><br>
-      	<div class="row text-center text-lg-left">
-			<div class="col-lg-3 col-md-4 col-6 container-image">
+    <div id="pill-1" class="container tab-pane active">
+    	<div class="container row px-5 mx-0 mt-1">
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-4 h-100">
-            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/ant-man.jfif" alt="">
+            		<img src="imgs/aladin.jpg" class="card-img image">
             		<div class="middle">
     					<div class="text">
-    						<h3>Ant-Man</h3>
-    						<h9 id="date">Sep 20, 2019 | 1h 57mins</h9><br>
-    						<span class="badge badge-dark">PG-13</span><br>
-    						<button class="button button5" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+    						<h4>Aladdin</h4>
+    						<h6 id="date">2h 8mins <span class="badge badge-warning">PG</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
     					</div>
   					</div>
           		</a>
-    		</div>
-    		<div class="col-lg-3 col-md-4 col-6">
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-4 h-100">
-            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/captain-marvel.jfif" alt="">
+            		<img src="imgs/tangled.jpg" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Tangled</h4>
+    						<h6 id="date">1h 40mins <span class="badge badge-warning">PG</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve2">Buy Ticket</button>
+    					</div>
+  					</div>
           		</a>
-    		</div>
-    		<div class="col-lg-3 col-md-4 col-6">
+    	</div>
+    </div>
+    </div>
+    <div id="pill-3" class="container tab-pane fade">
+       <div class="container row px-5 mx-0 mt-1">
+       	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-4 h-100">
-            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/guardians-of-the-galaxy.jfif" alt="">
+            		<img src="imgs/ant-man.jfif" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Ant-man</h4>
+    						<h6 id="date">1h 57mins <span class="badge badge-warning">PG-13</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve3">Buy Ticket</button>
+    					</div>
+  					</div>
           		</a>
-    		</div>
-    		<div class="col-lg-3 col-md-4 col-6">
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-4 h-100">
-            		<img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/infinity-war.jfif" alt="">
+            		<img src="imgs/infinity-war.jfif" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Infinity War</h4>
+    						<h6 id="date">2h 29mins <span class="badge badge-warning">PG-13</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve4">Buy Ticket</button>
+    					</div>
+  					</div>
           		</a>
-    		</div>
-		</div>
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/guardians-of-the-galaxy.jfif" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Guardians of the Galaxy</h4>
+    						<h6 id="date">2h 1mins <span class="badge badge-warning">PG-13</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve5">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/captain-marvel.jfif" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Captain Marvel</h4>
+    						<h6 id="date">2h 3mins <span class="badge badge-warning">PG-13</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve6">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/tron.jfif" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>TRON: Legacy</h4>
+    						<h6 id="date">2h 5mins <span class="badge badge-warning">PG-13</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve7">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+     </div>
     </div>
-    <div id="pill-2" class="container tab-pane fade"><br>
-      <h3>Romance</h3>
-    </div>
-    <div id="pill-3" class="container tab-pane fade"><br>
-      <h3>Action</h3>
-    </div>
-    <div id="pill-4" class="container tab-pane fade"><br>
-      <h3>Fantasy</h3>
-    </div>
-    <div id="pill-5" class="container tab-pane fade"><br>
-      <h3>Family</h3>
-    </div>
-    <div id="pill-6" class="container tab-pane fade"><br>
-      <h3>Others</h3>
-    </div>
+    <div id="pill-4" class="container tab-pane fade">
+ <div class="container row px-5 mx-0 mt-1">
+       	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/enchanted.jpg" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Enchanted</h4>
+    						<h6 id="date">1h 47mins <span class="badge badge-warning">PG</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve8">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/lion-king.jpg" class="card-img image">
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Lion King</h4>
+    						<h6 id="date">1h 58mins <span class="badge badge-warning">PG</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve9">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+     </div>
+</div>
+    <div id="pill-5" class="container tab-pane fade">
+    <div class="container row px-5 mx-0 mt-1">
+       	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/moana.jpg" class="card-img image">  
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Moana</h4>
+    						<h6 id="date">1h 47mins <span class="badge badge-warning">PG</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve10">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+    	<div class="card col-md-2 col-6 px-1 my-1 homepage-movie-cards container-image">
+      			<a href="#" class="d-block mb-4 h-100">
+            		<img src="imgs/wrinkle-in-time.jpg" class="card-img image"> 
+            		<div class="middle">
+    					<div class="text">
+    						<h4>Wrinkle in Time</h4>
+    						<h6 id="date">1h 49mins <span class="badge badge-warning">PG</span></h6>
+    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve11">Buy Ticket</button>
+    					</div>
+  					</div>
+          		</a>
+    	</div>
+     </div>
   </div>
 </div>
 <div class="modal fade" id="reserve1" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Ant-man</h4>
-        </div>
         <div class="modal-body">
           	<div class="row">
   				<div class="col-sm-8">
-  					<h3><b>Ant-Man</b><span class="badge badge-dark badge-class">PG-13</span></h3><br>
-    				<h6 id="date">Sep 20, 2019 | 1h 57mins</h6><br>
-    				<p>Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.</p>
-    				
-  					<!-- <form>
+  					<h4><b>Aladdin</b><span class="badge badge-warning badge-class">PG</span></h4><br>
+    				<h6 id="date"><i>2h 8mins</i></h6>
+    				<p>A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.<br><br>
+    				<b>Director:</b> Guy Ritchie<br>
+					<b>Writers:</b> John August (screenplay by), Guy Ritchie (screenplay by)<br>
+					<b>Stars:</b> Will Smith, Mena Massoud, Naomi Scott</p>	
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/aladin.jpg" class="card-img image">
+    			</div>
+			</div>
+			<hr>
     				<div class="dropdown">
-    					<select name="cinema">
+    					<select name="cinema" class="cinema">
     						<option value="cinema" selected>Cinema Number</option>
   							<option value="cinema1">Cinema 1</option>
   							<option value="cinema2">Cinema 2</option>
   							<option value="cinema3">Cinema 3</option>
   							<option value="cinema4">Cinema 4</option>
 						</select>
-						<select name="datedate">
+						<select name="datedate" class="datedate">
     						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
   							<option value="Sep 20">Sep 20</option>
   							<option value="Sep 21">Sep 21</option>
-  							<option value="Sep 30">Sep 30</option>
-  							<option value="Oct 05">Oct 05</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
 						</select>
-    					<select name="timetime">
+    					<select name="timetime" class="timetime">
     						<option value="timetime" selected>Time</option>
-  							<option value="10:00 AM">10:00 AM</option>
-  							<option value="1:00 PM">1:00 PM</option>
-  							<option value="2:30 PM">2:30 PM</option>
-  							<option value="7:00 PM">7:00 PM</option>
+  							<option value="10:00 AM">08:00 PM</option>
 						</select>
-					<button type="button" class="btn btn-default">Reserve</button>
-				</form> -->
-    			</div>
-  				<div class="col-sm-4"><img class="img-fluid img-thumbnail image" src="C:/Users/shamiah.gabriel.AWSYS-I/Desktop/movie_system/movie-reservation-system/imgs/ant-man.jfif" alt="">
-    			</div>
-    			<hr>
-    			<div class="dropdown">
-    					<button class="btn btn-default dropdown-toggle" type="button" id="cinema" data-toggle="dropdown">Cinema Number
-    					<span class="caret"></span></button>
-    						<ul class="dropdown-menu" role="menu" aria-labelledby="cinema">
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 1</a></li>
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 2</a></li>
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 3</a></li>
-      						<!-- <li role="presentation" class="divider"></li> -->
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cinema 4</a></li>
-    						</ul>
-    					<button class="btn btn-default dropdown-toggle" type="button" id="datedate" data-toggle="dropdown">Cinema Number
-    					<span class="caret"></span></button>
-    						<ul class="dropdown-menu" role="menu" aria-labelledby="datedate">
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sep 20</a></li>
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sep 21</a></li>
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sep 30</a></li>
-      						<!-- <li role="presentation" class="divider"></li> -->
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oct 5</a></li>
-    						</ul>
-    					<button class="btn btn-default dropdown-toggle" type="button" id="timetime" data-toggle="dropdown">Cinema Number
-    					<span class="caret"></span></button>
-    						<ul class="dropdown-menu" role="menu" aria-labelledby="timetime">
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10:00 AM</a></li>
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">1:00 PM</a></li>
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">2:30 PM</a></li>
-      						<!-- <li role="presentation" class="divider"></li> -->
-      							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">7:00 PM</a></li>
-    						</ul>
-  				</div>
-			</div>
+					</div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default">Reserve</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Tangled</b><span class="badge badge-warning badge-class">PG</span></h4><br>
+    				<h6 id="date"><i>1h 40mins</i></h6>
+    				<p>The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.<br><br>
+    				<b>Director:</b> Nathan Greno, Byron Howard<br>
+					<b>Writers:</b>  Dan Fogelman (screenplay by), Jacob Grimm (based upon the fairy tale "Rapunzel" by) (as the Brothers Grimm)<br>
+					<b>Stars:</b>  Mandy Moore, Zachary Levi, Donna Murphy</p>	
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/tangled.jpg" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="reserve3" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Ant-Man</b><span class="badge badge-warning badge-class">PG-13</span></h4><br>
+    				<h6 id="date"><i>1h 57mins</i></h6>
+    				<p>Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.<br><br>
+    				<b>Director:</b> Peyton Reed<br>
+					<b>Writers:</b> Edgar Wright (screenplay by), Joe Cornish (screenplay by)<br>
+					<b>Stars:</b> Paul Rudd, Michael Douglas, Corey Stoll</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/ant-man.jfif" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve4" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Infinity War</b><span class="badge badge-warning badge-class">PG-13</span></h4><br>
+    				<h6 id="date"><i>2h 29mins</i></h6>
+    				<p>The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.<br><br>
+    				<b>Director:</b>  Anthony Russo, Joe Russo<br>
+					<b>Writers:</b> Christopher Markus (screenplay by), Stephen McFeely (screenplay by)<br>
+					<b>Stars:</b> Robert Downey Jr., Chris Hemsworth, Mark Ruffalo</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/infinity-war.jfif" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve5" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Guradians of the Galaxy</b><span class="badge badge-warning badge-class">PG-13</span></h4><br>
+    				<h6 id="date"><i>2h 1mins</i></h6>
+    				<p>A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.<br><br>
+    				<b>Director:</b> James Gunn<br>
+					<b>Writers:</b>  James Gunn, Nicole Perlman<br>
+					<b>Stars:</b>  Chris Pratt, Vin Diesel, Bradley Cooper </p>		
+    			</div>
+    			<div class="col-sm-4"><img src="imgs/guardians-of-the-galaxy.jfif" class="card-img image">
+    			</div>
+  				
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve6" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Captain Marvel</b><span class="badge badge-warning badge-class">PG-13</span></h4><br>
+    				<h6 id="date"><i>2h 3mins</i></h6>
+    				<p>Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.<br><br>
+    				<b>Director:</b>  Anna Boden, Ryan Fleck<br>
+					<b>Writers:</b>  Anna Boden (screenplay by), Ryan Fleck (screenplay by) <br>
+					<b>Stars:</b> Brie Larson, Samuel L. Jackson, Ben Mendelsohn</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/captain-marvel.jfif" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve7" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>TRON: Legacy</b><span class="badge badge-warning badge-class">PG-13</span></h4><br>
+    				<h6 id="date"><i>2h 5mins</i></h6>
+    				<p>The son of a virtual world designer goes looking for his father and ends up inside the digital world that his father designed. He meets his father's corrupted creation and a unique ally who was born inside the digital world.<br><br>
+    				<b>Director:</b>  Joseph Kosinski<br>
+					<b>Writers:</b> Edward Kitsis (screenplay), Adam Horowitz (screenplay)<br>
+					<b>Stars:</b> Jeff Bridges, Garrett Hedlund, Olivia Wilde </p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/tron.jfif" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve9" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>The Lion King</b><span class="badge badge-warning badge-class">PG</span></h4><br>
+    				<h6 id="date"><i>1h 58mins</i></h6>
+    				<p>After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.<br><br>
+    				<b>Director:</b>  Jon Favreau<br>
+					<b>Writers:</b> Jeff Nathanson (screenplay by), Brenda Chapman (story)<br>
+					<b>Stars:</b> Donald Glover, Beyoncé, Seth Rogen</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/lion-king.jpg" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve10" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Moana</b><span class="badge badge-warning badge-class">PG-13</span></h4><br>
+    				<h6 id="date"><i>1h 57mins</i></h6>
+    				<p>In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.<br><br>
+    				<b>Director:</b> Ron Clements, John Musker<br>
+					<b>Writers:</b>  Jared Bush (screenplay by), Ron Clements (story by)<br>
+					<b>Stars:</b> Auli'i Cravalho, Dwayne Johnson, Rachel House</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/moana.jpg" class="card-img image">  
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve11" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>A Wrinkle in Time</b><span class="badge badge-warning badge-class">PG</span></h4><br>
+    				<h6 id="date"><i>1h 49mins</i></h6>
+    				<p>After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.<br><br>
+    				<b>Director:</b> Ava DuVernay<br>
+					<b>Writers:</b>  Jennifer Lee (screenplay by), Jeff Stockwell (screenplay by)<br>
+					<b>Stars:</b>  Storm Reid, Oprah Winfrey, Reese Witherspoon</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/wrinkle-in-time.jpg" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="reserve8" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          	<div class="row">
+  				<div class="col-sm-8">
+  					<h4><b>Enchanted</b><span class="badge badge-warning badge-class">PG</span></h4><br>
+    				<h6 id="date"><i>1h 47mins</i></h6>
+    				<p>A young maiden in a land called Andalasia, who is prepared to be wed, is sent away to New York City by an evil queen, where she falls in love with a lawyer. <br><br>
+    				<b>Director:</b> Kevin Lima<br>
+					<b>Writers:</b>  Bill Kelly<br>
+					<b>Stars:</b>  Amy Adams, Susan Sarandon, James Marsden</p>		
+    			</div>
+  				<div class="col-sm-4"><img src="imgs/enchanted.jpg" class="card-img image">
+    			</div>
+			</div>
+			<hr>
+    				<div class="dropdown">
+    					<select name="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
+						</select>
+						<select name="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
+  							
+						</select>
+    					<select name="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="10:00 AM">08:00 PM</option>
+						</select>
+					</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button1" data-dismiss="modal">Reserve</button>
+          <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh6B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
