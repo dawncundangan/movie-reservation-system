@@ -26,11 +26,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto px-2">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reservation</a>
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Reservation <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -48,7 +48,6 @@
           <img src="imgs/captain-marvel.jfif" class="card-img">
         </div>
         <hr class="mt-2 mb-0">
-        <!--h3 class="headings text-center"> Choose your seats! </h3-->
         <form class="mx-3 mt-1" id="seatplanForm">
           <div class="form-group mb-1">
             <label for="cinemaNumber">CINEMA: </label>
@@ -65,19 +64,12 @@
               <option>Sept 28, 2019 | 2:00-4:05PM</option>
             </select>
           </div>
-          <!--div class="form-group mb-1">
-            <label for="time">TIME: </label>
-            <select class="form-control form-control-sm" id="time" disabled>
-              <option>2:00 PM - 4:05 PM</option>
-            </select>
-          </div-->
           <div class="form-group mb-1">
             <label for="date">TOTAL SEAT COUNT: </label>
             <input class="form-control form-control-sm" type="number" value="3" disabled>
           </div>
           <div class="form-group mb-1">
             <label for="date" class="mb-0">TOTAL AMOUNT DUE: </label>
-            <!--input type="number" class="form-control-sm form-control-plaintext text-right py-0 my-0" value="780.00" readonly-->
             <p class="text-right mb-0" id="totalAmount">₱ 780.00</p>
           </div>
           <button class="btn btn-sm btn-block btn-danger">Check out</button>
