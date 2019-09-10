@@ -5,30 +5,27 @@
 <title>Reservation_page</title>
 <link rel="stylesheet" href="css/reservations_page.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<nav class="navbar-expand-md navbar-dark fixed-top bg-dark p-1" id="navbarMain">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarMain">
+      <a class="navbar-brand align-items-center" href="#">
+        <img src="imgs/temp-icon.png" width="30" height="30"> 
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="row px-5">
-        <a class="navbar-brand align-items-center" href="#">
-          <img src="imgs/temp-icon.png" width="30" height="30"> 
-          <!--span> Cinema World </span-->
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto px-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="reservations_page.html">Reservation<span class="sr-only">(current)</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto px-2">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reservation</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Search</button>
+        </form>
+      </div>    
     </nav>
 </head>
 <body class="mt-5 pt-3 colorbody">
@@ -60,8 +57,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Aladdin</h4>
-    						<h6 id="date">2h 8mins <span class="badge badge-warning">PG</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve1">Buy Ticket</button>
+    						<h6 id="date">2h 8mins <span class="badge badge-warning">PG</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -72,8 +68,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Tangled</h4>
-    						<h6 id="date">1h 40mins <span class="badge badge-warning">PG</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve2">Buy Ticket</button>
+    						<h6 id="date">1h 40mins <span class="badge badge-warning">PG</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve2">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -88,8 +83,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Ant-man</h4>
-    						<h6 id="date">1h 57mins <span class="badge badge-warning">PG-13</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve3">Buy Ticket</button>
+    						<h6 id="date">1h 57mins <span class="badge badge-warning">PG-13</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve3">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -100,8 +94,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Infinity War</h4>
-    						<h6 id="date">2h 29mins <span class="badge badge-warning">PG-13</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve4">Buy Ticket</button>
+    						<h6 id="date">2h 29mins <span class="badge badge-warning">PG-13</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve4">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -112,8 +105,8 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Guardians of the Galaxy</h4>
-    						<h6 id="date">2h 1mins <span class="badge badge-warning">PG-13</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve5">Buy Ticket</button>
+    						<h6 id="date">2h 1mins <span class="badge badge-warning">PG-13</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve5">Buy Ticket</button></h6>
+    					
     					</div>
   					</div>
           		</a>
@@ -124,8 +117,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Captain Marvel</h4>
-    						<h6 id="date">2h 3mins <span class="badge badge-warning">PG-13</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve6">Buy Ticket</button>
+    						<h6 id="date">2h 3mins <span class="badge badge-warning">PG-13</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve6">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -136,8 +128,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>TRON: Legacy</h4>
-    						<h6 id="date">2h 5mins <span class="badge badge-warning">PG-13</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve7">Buy Ticket</button>
+    						<h6 id="date">2h 5mins <span class="badge badge-warning">PG-13</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve7">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -152,8 +143,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Enchanted</h4>
-    						<h6 id="date">1h 47mins <span class="badge badge-warning">PG</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve8">Buy Ticket</button>
+    						<h6 id="date">1h 47mins <span class="badge badge-warning">PG</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve8">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -164,8 +154,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Lion King</h4>
-    						<h6 id="date">1h 58mins <span class="badge badge-warning">PG</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve9">Buy Ticket</button>
+    						<h6 id="date">1h 58mins <span class="badge badge-warning">PG</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve9">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -180,8 +169,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Moana</h4>
-    						<h6 id="date">1h 47mins <span class="badge badge-warning">PG</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve10">Buy Ticket</button>
+    						<h6 id="date">1h 47mins <span class="badge badge-warning">PG</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve10">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
@@ -192,8 +180,7 @@
             		<div class="middle">
     					<div class="text">
     						<h4>Wrinkle in Time</h4>
-    						<h6 id="date">1h 49mins <span class="badge badge-warning">PG</span></h6>
-    						<button class="button button5 btn-block" data-toggle="modal" data-target="#reserve11">Buy Ticket</button>
+    						<h6 id="date">1h 49mins <span class="badge badge-warning">PG</span><br><button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve11">Buy Ticket</button></h6>
     					</div>
   					</div>
           		</a>
