@@ -17,30 +17,27 @@
     <title>Cinema World - Homepage </title>
 
     <!-- Navbar -->
-    <nav class="navbar-expand-md navbar-dark fixed-top bg-dark p-1" id="navbarMain">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarMain">
+      <a class="navbar-brand align-items-center" href="#">
+        <img src="imgs/temp-icon.png" width="30" height="30"> 
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="row px-5">
-        <a class="navbar-brand align-items-center" href="#">
-          <img src="imgs/temp-icon.png" width="30" height="30"> 
-          <!--span> Cinema World </span-->
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto px-2">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Reservation</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto px-2">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reservation</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Search</button>
+        </form>
+      </div>    
     </nav>
   </head>
 
@@ -50,6 +47,9 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -58,15 +58,17 @@
         <div class="carousel-item">
           <img class="d-block w-100" src="imgs/man-of-steel.jpg" alt="Second slide">
         </div>
-
         <div class="carousel-item">
-          <img class="d-block w-100" src="imgs/dark-knight-rises-batman.jpg" alt="Third slide">
+          <img class="d-block w-100" src="imgs/shazam.jpg" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="imgs/aquaman.jpg" alt="Fourth slide">
+          <img class="d-block w-100" src="imgs/dark-knight-rises-batman.jpg" alt="Fourth slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="imgs/avengers.jpg" alt="Fifth slide">
+          <img class="d-block w-100" src="imgs/aquaman.jpg" alt="Fifth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imgs/avengers.jpg" alt="Sixth slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -81,11 +83,8 @@
     <div class="container py-2 mb-5">
       <div class="container py-1" id="homepageTabs">
         <ul class="nav nav-pills d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-light btn-sm homepage-tabs mx-1">All Cinemas</button>
-          <button type="button" class="btn btn-outline-dark btn-sm homepage-tabs mx-1">Cinema 1</button>
-          <button type="button" class="btn btn-outline-dark btn-sm homepage-tabs mx-1">Cinema 2</button>
-          <button type="button" class="btn btn-outline-dark btn-sm homepage-tabs mx-1">Cinema 3</button>
-          <button type="button" class="btn btn-outline-dark btn-sm homepage-tabs mx-1">Cinema 4</button>
+          <button type="button" class="btn btn-outline-light btn-sm homepage-tabs mx-1">Now Showing</button>
+          <button type="button" class="btn btn-outline-dark btn-sm homepage-tabs mx-1">Coming Soon</button>
         </ul>
       </div>
       <!--h3 class="now-showing py-0 my-0 px-5">Now Showing</h3-->
@@ -96,7 +95,7 @@
               <div class="pt-sm-2 pt-m-1">
                 <h4>Moana</h4>
                 <p class="showing-datetime mb-0">Now Showing</p> 
-                <p class="showing-datetime my-0">2h 1min</p>
+                <p class="showing-datetime my-0">2hrs 1min</p>
                 <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
               </div>
               <div class="pt-sm-5 pt-md-3">
@@ -110,7 +109,7 @@
               <div class="pt-sm-2 pt-m-1">
                 <h4>A Wrinkle in Time</h4>
                 <p class="showing-datetime mb-0">Now Showing</p> 
-                <p class="showing-datetime my-0">1h 57mins</p>
+                <p class="showing-datetime my-0">1hr 57mins</p>
                 <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
               </div>
               <div class="pt-sm-5 pt-md-3">
@@ -124,7 +123,7 @@
               <div class="pt-sm-2 pt-m-1">
                 <h4>Enchanted</h4>
                 <p class="showing-datetime mb-0">Now Showing</p> 
-                <p class="showing-datetime my-0">2h 07mins</p>
+                <p class="showing-datetime my-0">2hrs 07mins</p>
                 <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
               </div>
               <div class="pt-sm-5 pt-md-3">
@@ -138,7 +137,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Lion King</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 07mins</p>
+              <p class="showing-datetime my-0">2hrs 07mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -152,7 +151,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Aladdin</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 13mins</p>
+              <p class="showing-datetime my-0">2hrs 13mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -166,7 +165,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Ant Man</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 30mins</p>
+              <p class="showing-datetime my-0">2hrs 30mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -180,7 +179,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Infinity War</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 59mins</p>
+              <p class="showing-datetime my-0">2hrs 59mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -194,7 +193,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h5>Guardians of the Galaxy</h5>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 45mins</p>
+              <p class="showing-datetime my-0">2hrs 45mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -208,7 +207,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Captain Marvel</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 50mins</p>
+              <p class="showing-datetime my-0">2hrs 50mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -222,7 +221,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Tron</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 05mins</p>
+              <p class="showing-datetime my-0">2hrs 05mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -236,7 +235,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h4>Tangled</h4>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">1h 45mins</p>
+              <p class="showing-datetime my-0">1hr 45mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">
@@ -250,7 +249,7 @@
             <div class="pt-sm-2 pt-m-1">
               <h5>Beauty and the Beast</h5>
               <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2h 10mins</p>
+              <p class="showing-datetime my-0">2hrs 10mins</p>
               <span class="badge badge-dark mb-sm-2 mb-md-1">PG-13</span>
             </div>
             <div class="pt-sm-5 pt-md-3">

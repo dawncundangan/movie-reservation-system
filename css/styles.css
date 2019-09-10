@@ -28,7 +28,7 @@ body {
 }
 
 .btn-outline-light.homepage-tabs {
-	color: darkgray;
+	color: white;
 }
 
 .btn-outline-light.homepage-tabs:hover {
@@ -36,7 +36,7 @@ body {
 }
 
 .carousel-inner {
-	height: 45vh;
+	height: 55vh;
 }
 
 .movies-now-showing {
@@ -59,6 +59,22 @@ body {
 }
 
 /* Seatplan */
+.seat-cards {
+	opacity: 0.95;
+}
+
+.seat-cards p:hover {
+	color: #ffffff;
+}
+
+.seat-cards:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.seat-taken, .seat-taken:hover {
+	opacity: 0.65;
+}
 
 .seat-cards .card-img {
 	border-radius: calc(.8rem - .5px);
@@ -70,14 +86,42 @@ body {
 	color: #ffffff63;
 }
 
-.seat-cards p:hover {
-	color: #ffffff;
-	cursor: pointer;
+#cinemaScreen {
+	background-color: #cffff3;
+	height: 1.25em;
 }
 
-#cinemaScreen {
-	background-color: #bababa;
-	height: 1.5em;
+.popcorn {
+	width: 65%;
+}
+
+#seatplanForm {
+	font-size: 0.8em;
+}
+
+#legend {
+	bottom: 0;
+}
+
+.legend {
+	width:1.25em;
+	background-color: #840b15;
+	border-radius: calc(.8rem - .5px);
+}
+
+.legend-available {
+	background-color: #e20b1c;
+	height: 1.25em;
+}
+
+hr {
+	border-color: white;
+}
+
+.form-control-plaintext, #totalAmount {
+	color: white;
+	font-size: 1.5em;
+	font-weight: 200;
 }
 
 @media screen and (min-width: 640px) {
