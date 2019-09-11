@@ -2,6 +2,9 @@
 	background-color: #131313;
 	/*color: white;*/
 }
+#result{
+  color: white;
+}
 .third{
   color: white;
 }
@@ -15,11 +18,6 @@ select {
     -webkit-padding-start: 2px;
     -moz-padding-start: 2px;
     /*background-color: #F07575;*/ /* Fallback color if gradients are not supported */
-    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
-    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Firefox (3.6 to 15) */
-    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of Internet Explorer  10*/
-    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */
-    background-image: url(../images/select-arrow.png), linear-gradient(top bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
     background-position: center right;
     background-repeat: no-repeat;
     border: 1px solid #AAA;
@@ -77,14 +75,34 @@ a.navbar-brand span {
   color: white;
 }
 
-.button1:hover {
-  background-color: blue;
+.button1 {
+  background-color: black;
   color: white;
 }
-.button2:hover {
+.button2 {
+  background-color:black;
+  color: white;
+}
+.button3 {
+  background-color: grey; /* Green */
+  border: none;
+  color:black;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+}
+.button3:hover {
   background-color: red;
-  color: white;
-}
+  color:white;
+  }
 h6{
   font-style: bold;
 }
