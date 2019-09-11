@@ -2,6 +2,22 @@
 #navbarMain {
 	background-color: #0f0f0f !important;
 }
+.button3 {
+  background-color: grey; /* Green */
+  border: none;
+  color:black;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+}
 
 a.navbar-brand span {
 	color: #04ffa8;
@@ -36,7 +52,7 @@ body {
 }
 
 .carousel-inner {
-	height: 55vh;
+	height: 60vh;
 }
 
 .movies-now-showing {
@@ -58,7 +74,7 @@ body {
 	background-color: inherit !important;
 }
 
-/* Seatplan */
+/* Seatplan Page */
 .seat-cards {
 	opacity: 0.95;
 }
@@ -128,4 +144,142 @@ hr {
   #seatPlan {
     max-height: 75vh;
   }
+}
+
+/* Reservation Page */
+.colorbody {
+	background-color: #131313;
+}
+
+.third{
+  	color: white;
+}
+
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Firefox (3.6 to 15) */
+    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of Internet Explorer  10*/
+    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */
+    background-image: url(../images/select-arrow.png), linear-gradient(top bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container-image {
+  	position: relative;
+  	width: 50%;
+}
+
+.cinema{
+  	width: 25%;
+}
+
+.datedate{
+  	width: 25%;
+}
+
+.timetime{
+  	width: 25%;
+}
+
+.dropdown{
+	position: relative;
+	text-align: center;
+}
+
+.modal .modal-footer {
+  	background: grey;
+}
+
+.badge-class{
+	float: right;
+}
+.button5:hover {
+  background-color: red;
+  color: white;
+}
+
+.button1 {
+  background-color: black;
+  color: white;
+}
+.button2 {
+  background-color:black;
+  color: white;
+}
+
+h6{
+  font-style: bold;
+}
+
+.button {
+  background-color: transparent; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.button-class{
+	margin-top: 10px;
+	border-radius: 2%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-image:hover .image {
+  opacity: 0.3;
+}
+
+.container-image:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
 }
