@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarMain">
-      <a class="navbar-brand align-items-center" href="#">
+      <a class="navbar-brand align-items-center" href="index.html">
         <img src="imgs/temp-icon.png" width="30" height="30"> 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +29,12 @@
 </nav>
 </head>
 <body class="mt-5 pt-3 colorbody">
-<div class="container">
+<div class="container-fluid">
 <div class="row">
 	<div class="col-sm-6">
 	<!-- <p id="result"></p> -->
-	<div class="third"><p>SELECT A MOVIE</p></div>
-	<ul class="nav nav-pills justify-content-center" role="tablist">
+	<div class="third"><h3 class="pl-4 pt-3 pb-2 headings">SELECT A MOVIE</h3></div>
+	<ul class="nav nav-pills nav-justified pl-4 pr-1 pb-2 movie-categories" role="tablist">
   		<li class="nav-item pill-1">
     		<a class="nav-link active" data-toggle="pill" href="#pill-1">Romance</a>
   		</li>
@@ -49,8 +49,8 @@
   		</li>
 	</ul>
 	<div class="tab-content">
-    	<div id="pill-1" class="container tab-pane active">
-    		<div class="container row px-4 mx-0 mt-1">
+    	<div id="pill-1" class="container tab-pane scrollbar-near-moon scrollbar-near-moon active px-0">
+    		<div class="container row mx-0 mt-1">
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       				<a href="#" class="d-block mb-4 h-100">
             			<img src="imgs/tangled.jpg" class="card-img image">
@@ -86,7 +86,7 @@
           </div>
     		</div>
     	</div>
-    	<div id="pill-3" class="container tab-pane fade">
+    	<div id="pill-3" class="container tab-pane scrollbar-near-moon fade px-0">
        		<div class="container row px-4 mx-0 mt-1">
        			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       				<a href="#" class="d-block mb-4 h-100">
@@ -146,8 +146,8 @@
     			</div>
   			</div>
     	</div>
-    <div id="pill-4" class="container tab-pane fade">
- 		<div class="container row px-4 mx-0 mt-1">
+    <div id="pill-4" class="container tab-pane scrollbar-near-moon fade px-0">
+ 		<div class="container row mx-0 mt-1">
        		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-4 h-100">
             		<img src="imgs/enchanted.jpg" class="card-img image">
@@ -172,8 +172,8 @@
     	</div>
     </div>
 </div>
-    <div id="pill-5" class="container tab-pane fade">
-    	<div class="container row px-4 mx-0 mt-1">
+    <div id="pill-5" class="container tab-pane scrollbar-near-moon fade px-0">
+    	<div class="container row mx-0 mt-1">
        		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-4 h-100">
             		<img src="imgs/moana.jpg" class="card-img image">  
@@ -201,23 +201,24 @@
 </div>
 </div>
 <div class="col-sm-6">
-	<div class="third"><p>RESERVATION DETAILS</p></div>
-	<table class="table table-striped table-dark rounded" id="reserves">
-  <thead>
-    <tr>
-      <th scope="col">Movie Title</th>
-      <th scope="col">Cinema Number</th>
-      <th scope="col">Date</th>
-      <th scope="col">Time</th>
-      <th scope="col">Seat No.</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
+	<div class="card mt-3" id="myReservations">
+    <h3 class="pt-3 text-center headings">RESERVATIONS</h3>
+  	<table class="table table-striped table-sm compact table-dark rounded" id="reserves">
+      <thead>
+        <tr>
+          <th scope="col">Movie Title</th>
+          <th scope="col">Cinema Number</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Seat No.</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
 </div>
-
 <div class="modal fade" id="reserve1" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
