@@ -345,15 +345,12 @@ if(queryString!=''){
   function getData() {
     return JSON.parse(localStorage.getItem('tableData') || "[]");
 }
-
-window.onload = function() {
+createTable();
+function createTable(){
   const data = getData();
   if(data!=null){
     console.log(data);
     var $table  =  $('<table class="table table-striped table-dark rounded"><thead><tr><th scope="col">Movie Title</th><th scope="col">Cinema Number</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Seat No.</th><th scope="col">Action</th></tr></thead></table>');
-    var btn = document.createElement("BUTTON");
-      btn.innerHTML = "Cancel";
-      btn.setAttribute("class", "button3");
     for(var i=1;i<data.length;i++)
     {
     var $tr =  $('<tr></tr>');
@@ -362,13 +359,12 @@ window.onload = function() {
     var $td3 =  $('<td></td>');
     var $td4 =  $('<td></td>');
     var $td5 =  $('<td></td>');
-    var $td6 =  $('<td></td>');
+    var $td6 =  $('<td><button type="button" class="btn btn-default button2" onclick="deleteData(this)">Cancel</button></td>');
     $td1.append(data[i].title);
     $td2.append(data[i].cinema);
     $td3.append(data[i].date);
     $td4.append(data[i].time);
     $td5.append(data[i].seat);
-    $td6.append(btn.outerHTML);
     $tr.append($td1);
     $tr.append($td2);
     $tr.append($td3);
@@ -379,20 +375,62 @@ window.onload = function() {
     }
     $('div#tabletable').empty().append($table);
   }
-   
-};        
+}
+  function deleteData(element){;
+    tableData=JSON.parse(localStorage.getItem('tableData'));
+    tableData.splice(element.parentNode.parentNode.rowIndex, 1);
+    localStorage.setItem('tableData',JSON.stringify(tableData));
+    createTable();   
+  }  
   function addReservations(){
-      const  data= {
-        title: document.getElementById("title_movie").innerHTML,
-        cinema:document.getElementById("cinema").value,
-        date:document.getElementById("datedate").value,
-        time:document.getElementById("timetime").value,
-        seat:"TBH",
+      var titled= document.getElementById("title_movie").innerHTML;
+      var selectedCinema = document.getElementById("cinema").value;
+      var selecteddate = document.getElementById("datedate").value;
+      var selectedtime = document.getElementById("timetime").value;
+      console.log(titled);
+      if(titled=="Aladdin"){
+        titled="aladdin";
       }
-      var a = [];
-      a = JSON.parse(localStorage.getItem('tableData'));
-      a.push(data);
-      localStorage.setItem('tableData', JSON.stringify(a));
+      else if (titled=="Tangled"){
+        titled="tangled";
+      }
+      else if (titled=="Ant-Man"){
+        titled="antMan";
+      }
+      else if (titled=="Infinity War"){
+        titled="infinitywar";
+      }
+      else if (titled=="Guardians of the Galaxy"){
+        titled="gog";
+      }
+      else if (titled=="Captain Marvel"){
+        titled="captainmarvel";
+      }
+      else if (titled=="TRON: Legacy"){
+        titled="TRON";
+      }
+      else if (titled=="The Lion King"){
+        titled="TLK";
+      }
+      else if (titled=="Moana"){
+        titled="moana";
+      }
+      else if (titled=="A Wrinkle in Time"){
+        titled="awt";
+      }
+      else if (titled=="Enchanted"){
+        titled="enchanted";
+      }
+      else if (titled=="Beauty and the Beast"){
+        titled="BAB";
+      }
+      var title=titled;
+      var cinemas=selectedCinema;
+      var date=selecteddate;
+      var time=selectedtime;
+      var queryString = "?" + title + "&" + cinemas + "&" + date + "&" + time;
+      window.location.href = "seatplan.html" + queryString;
+      
   }
 document.getElementById('cinema').addEventListener('click', cinema_selected);
 document.getElementById('datedate').addEventListener('click', date_selected);
