@@ -209,6 +209,8 @@ if(queryString!=''){
   $("#reserve1").modal();
   showDetails(queryString);
 }
+  
+
   var date = document.getElementById("datedate");
   var time = document.getElementById("timetime");
   var cinema = document.getElementById('cinema');
