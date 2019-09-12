@@ -95,6 +95,10 @@ body {
 	background-color: inherit !important;
 }
 
+.footer {
+	background-color: #a2ffd1;
+}
+
 /* Seatplan Page */
 .seat-cards {
 	opacity: 0.83;
@@ -342,11 +346,9 @@ h6{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-top: 25px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  border-radius: 15px;
   outline: none;
 }
 
