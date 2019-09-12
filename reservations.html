@@ -5,9 +5,8 @@
 <title>Reservation_page</title>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarMain">
-      <a class="navbar-brand align-items-center" href="#">
+      <a class="navbar-brand align-items-center" href="index.html">
         <img src="imgs/temp-icon.png" width="30" height="30"> 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +29,12 @@
 </nav>
 </head>
 <body class="mt-5 pt-3 colorbody">
-<div class="container">
+<div class="container-fluid">
 <div class="row">
 	<div class="col-sm-6">
 	<!-- <p id="result"></p> -->
-	<div class="third"><p>SELECT A MOVIE</p></div>
-	<ul class="nav nav-pills justify-content-center" role="tablist">
+	<div class="third"><h3 class="pl-4 pt-3 pb-2 headings">SELECT A MOVIE</h3></div>
+	<ul class="nav nav-pills nav-justified pl-4 pr-1 pb-2 movie-categories" role="tablist">
   		<li class="nav-item pill-1">
     		<a class="nav-link active" data-toggle="pill" href="#pill-1">Romance</a>
   		</li>
@@ -50,8 +49,8 @@
   		</li>
 	</ul>
 	<div class="tab-content">
-    	<div id="pill-1" class="container tab-pane active">
-    		<div class="container row px-4 mx-0 mt-1">
+    	<div id="pill-1" class="container tab-pane scrollbar-near-moon scrollbar-near-moon active px-0">
+    		<div class="container row mx-0 mt-1">
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/tangled.jpg" class="card-img image">
@@ -87,7 +86,7 @@
           </div>
     		</div>
     	</div>
-    	<div id="pill-3" class="container tab-pane fade">
+    	<div id="pill-3" class="container tab-pane scrollbar-near-moon fade px-0">
        		<div class="container row px-4 mx-0 mt-1">
        			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       				<a href="#" class="d-block mb-2 h-100">
@@ -147,8 +146,8 @@
     			</div>
   			</div>
     	</div>
-    <div id="pill-4" class="container tab-pane fade">
- 		<div class="container row px-4 mx-0 mt-1">
+    <div id="pill-4" class="container tab-pane scrollbar-near-moon fade px-0">
+ 		<div class="container row mx-0 mt-1">
        		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/enchanted.jpg" class="card-img image">
@@ -173,8 +172,8 @@
     	</div>
     </div>
 </div>
-    <div id="pill-5" class="container tab-pane fade">
-    	<div class="container row px-4 mx-0 mt-1">
+    <div id="pill-5" class="container tab-pane scrollbar-near-moon fade px-0">
+    	<div class="container row mx-0 mt-1">
        		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
       			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/moana.jpg" class="card-img image">  
@@ -201,24 +200,25 @@
 </div>
 </div>
 </div>
-<div class="col-sm-6" id="tabletable">
-	<!-- <div class="third"><p>RESERVATION DETAILS</p></div> -->
-	<!-- <table class="table table-striped table-dark rounded" id="reserves">
-  <thead>
-    <tr>
-      <th scope="col">Movie Title</th>
-      <th scope="col">Cinema Number</th>
-      <th scope="col">Date</th>
-      <th scope="col">Time</th>
-      <th scope="col">Seat No.</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table> -->
+<div class="col-sm-6">
+	<div class="card mt-3" id="myReservations">
+    <h3 class="pt-3 text-center headings">RESERVATIONS</h3>
+  	<table class="table table-striped table-sm compact table-dark rounded" id="reserves">
+      <thead>
+        <tr>
+          <th scope="col">Movie Title</th>
+          <th scope="col">Cinema Number</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Seat No.</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
 </div>
-
 <div class="modal fade" id="reserve1" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -239,9 +239,34 @@
     				<div class="dropdown">
     					<select name="cinema" id="cinema" class="cinema">
     						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
 						</select>
 						<select name="datedate" id="datedate" class="datedate">
     						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
   							
 						</select>
     					<select name="timetime" id="timetime" class="timetime">
@@ -262,8 +287,256 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="jsfile.js"></script>
+<script type="text/javascript">
+const aladdin = {
+    name: "Aladdin",
+    badge: "PG",
+    time: "2h 8mins",
+    description: "A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.",
+    director: "Guy Ritchie",
+    writer:"John August (screenplay by), Guy Ritchie (screenplay by)",
+    stars:"Will Smith, Mena Massoud, Naomi Scott",
+    image:"imgs/aladdin.jpg",
 
+}
+const tangled = {
+    name: "Tangled",
+    badge: "PG",
+    time: "1h 40mins",
+    description: "The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.",
+    director: "Nathan Greno, Byron Howard",
+    writer:"Dan Fogelman (screenplay by), Jacob Grimm (based upon the fairy tale Rapunzel by) (as the Brothers Grimm)",
+    stars:"Mandy Moore, Zachary Levi, Donna Murphy",
+    image:"imgs/tangled.jpg",
+}
+const antMan = {
+    name: "Ant-Man",
+    badge: "PG-13",
+    time: "1h 57mins",
+    description: "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
+    director: "Peyton Reed",
+    writer:"Edgar Wright (screenplay by), Joe Cornish (screenplay by)",
+    stars:"Paul Rudd, Michael Douglas, Corey Stoll",
+    image:"imgs/ant-man.jfif",
+}
+const infinitywar = {
+    name: "Infinity War",
+    badge: "PG-13",
+    time: "2h 29mins",
+    description: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    director: "Anthony Russo, Joe Russo",
+    writer:"Christopher Markus (screenplay by), Stephen McFeely (screenplay by)",
+    stars:"Robert Downey Jr., Chris Hemsworth, Mark Ruffalo",
+    image:"imgs/infinity-war.jfif",
+}
+const gog = {
+   name: "Guradians of the Galaxy",
+    badge: "PG-13",
+    time: "2h 1mins",
+    description: "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+    director: "James Gunn",
+    writer:"James Gunn, Nicole Perlman",
+    stars:"Chris Pratt, Vin Diesel, Bradley Cooper",
+    image:"imgs/guardians-of-the-galaxy.jfif",
+}
+const captainmarvel = {
+    name: "Captain Marvel",
+    badge: "PG-13",
+    time: "2h 3mins",
+    description: "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+    director: "Anna Boden, Ryan Fleck",
+    writer:"Anna Boden (screenplay by), Ryan Fleck (screenplay by)",
+    stars:"Brie Larson, Samuel L. Jackson, Ben Mendelsohn",
+    image:"imgs/captain-marvel.jfif",
+}
+const TRON = {
+    name: "TRON: Legacy",
+    badge: "PG-13",
+    time: "2h 5mins",
+    description: "The son of a virtual world designer goes looking for his father and ends up inside the digital world that his father designed. He meets his father's corrupted creation and a unique ally who was born inside the digital world.",
+    director: "Joseph Kosinski",
+    writer:"Edward Kitsis (screenplay), Adam Horowitz (screenplay)",
+    stars:"Jeff Bridges, Garrett Hedlund, Olivia Wilde",
+    image:"imgs/tron.jfif",
+}
+const TLK = {
+    name: "The Lion King",
+    badge: "PG",
+    time: "1h 58mins",
+    description: "After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
+    director: "Jon Favreau",
+    writer:"Jeff Nathanson (screenplay by), Brenda Chapman (story)",
+    stars:"Donald Glover, Beyoncé, Seth Rogen",
+    image:"imgs/lion-king.jpg",
+}
+const moana = {
+    name: "Moana",
+    badge: "PG",
+    time: "1h 57mins",
+    description: "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+    director: "Ron Clements, John Musker",
+    writer:"Jared Bush (screenplay by), Ron Clements (story by)",
+    stars:"Auli'i Cravalho, Dwayne Johnson, Rachel House",
+    image:"imgs/moana.jpg",
+}
+const awt = {
+    name: "A Wrinkle in Time",
+    badge: "PG",
+    time: "1h 49mins",
+    description: "After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.",
+    director: "Ava DuVernay",
+    writer:"Jennifer Lee (screenplay by), Jeff Stockwell (screenplay by)",
+    stars:"Storm Reid, Oprah Winfrey, Reese Witherspoon",
+    image:"imgs/wrinkle-in-time.jpg",
+}
+const enchanted = {
+    name: "Enchanted",
+    badge: "PG",
+    time: "1h 47mins",
+    description: "A young maiden in a land called Andalasia, who is prepared to be wed, is sent away to New York City by an evil queen, where she falls in love with a lawyer.",
+    director: "Kevin Lima",
+    writer:"Bill Kelly",
+    stars:"Amy Adams, Susan Sarandon, James Marsden",
+    image:"imgs/enchanted.jpg",
+}
+
+const BAB = {
+    name: "Beuty and the Beast",
+    badge: "PG",
+    time: "2h 10mins",
+    description: "A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a beautiful young woman he keeps prisoner.",
+    director: "Bill Condon",
+    writer:"Bill Kelly",
+    stars:" Emma Watson, Dan Stevens, Luke Evans",
+    image:"imgs/beauty-and-the-beast.jfif",
+}
+
+
+if (typeof(Storage) !== "undefined") {
+  // Store
+ localStorage.setItem('aladdin', JSON.stringify(aladdin));
+ localStorage.setItem('tangled', JSON.stringify(tangled));
+ localStorage.setItem('antMan', JSON.stringify(antMan));
+ localStorage.setItem('infinitywar', JSON.stringify(infinitywar));
+ localStorage.setItem('gog', JSON.stringify(gog));
+ localStorage.setItem('captainmarvel', JSON.stringify(captainmarvel));
+ localStorage.setItem('TRON', JSON.stringify(TRON));
+ localStorage.setItem('TLK', JSON.stringify(TLK));
+ localStorage.setItem('moana', JSON.stringify(moana));
+ localStorage.setItem('awt', JSON.stringify(awt));
+ localStorage.setItem('enchanted', JSON.stringify(enchanted));
+ localStorage.setItem('BAB', JSON.stringify(BAB));
+  // Retrieve
+  /*console.log(JSON.parse(localStorage.getItem('aladdin')).description);*/
+  
+}
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+console.log(queryString);
+if(queryString!=''){ 
+  $("#reserve1").modal();
+  showDetails(queryString);
+}
+  
+
+	var date = document.getElementById("datedate");
+	var time = document.getElementById("timetime");
+	var cinema = document.getElementById('cinema');
+	cinema_selected();
+
+	function resetInput(){
+		cinema.value = "cinema";
+		date.value = "datedate";
+		time.value = "timetime";
+		cinema_selected();
+    window.location.href = "reservations.html";
+	}
+	function showDetails(title) {
+  		document.getElementById("title_movie").innerHTML =  JSON.parse(localStorage.getItem(title)).name;
+  		document.getElementById("badge_movie").innerHTML=JSON.parse(localStorage.getItem(title)).badge;
+  		document.getElementById("date_movie").innerHTML=JSON.parse(localStorage.getItem(title)).time;
+  		document.getElementById("description_movie").innerHTML=JSON.parse(localStorage.getItem(title)).description;
+  		document.getElementById("director_movie").innerHTML=JSON.parse(localStorage.getItem(title)).director;
+  		document.getElementById("writer_movie").innerHTML=JSON.parse(localStorage.getItem(title)).writer;
+  		document.getElementById("stars_movie").innerHTML=JSON.parse(localStorage.getItem(title)).stars;
+  		document.getElementById("image_movie").src = JSON.parse(localStorage.getItem(title)).image;
+
+
+	}
+	
+	function cinema_selected() {
+		console.log( cinema.value );
+		if(cinema.value=="cinema"){
+			console.log("haha");
+			time.disabled=true;
+			time.value = "timetime"; 
+			date.disabled=true;
+			date.value = "datedate";
+			document.getElementById("reserveBtn").disabled=true;
+		}
+		else{
+			date.disabled=false;
+		}
+	}
+	function date_selected() {
+		console.log( date.value );
+		if(date.value=="datedate"){
+			console.log("haha1");
+			time.disabled=true;
+			time.value = "timetime";
+			document.getElementById("reserveBtn").disabled=true;
+		}
+		else{
+			time.disabled=false;
+		}
+	}
+	function time_selected() {
+		console.log( time.value );
+		if(time.value=="timetime"){
+			console.log("haha2");
+			document.getElementById("reserveBtn").disabled=true;
+		}
+		else{
+			document.getElementById("reserveBtn").disabled=false;
+		}
+	}
+	function addReservations(){
+		console.log(document.getElementById("title_movie").value);
+		var table = document.getElementById("reserves");
+		var btn = document.createElement("BUTTON");
+  		btn.innerHTML = "Cancel";
+  		btn.setAttribute("class", "button3");
+		var lastRow = table.rows[table.rows.length-1].cells;
+		var firstCell = lastRow[0].innerHTML;
+  		var row = table.insertRow(table.rows.length);
+  		var title = row.insertCell(0);
+  		var cinema = row.insertCell(1);
+  		var date = row.insertCell(2);
+  		var time = row.insertCell(3);
+  		var seat = row.insertCell(4);
+  		var action = row.insertCell(5);
+  		title.innerHTML =  document.getElementById("title_movie").innerHTML;
+  		cinema.innerHTML = document.getElementById("cinema").value;
+  		date.innerHTML = document.getElementById("datedate").value;
+  		time.innerHTML = document.getElementById("timetime").value;
+  		seat.innerHTML = "TBH";
+  		action.innerHTML = btn.outerHTML;
+  		var id_id =0;
+  		var add =1;
+  		const  data= {
+  			title: document.getElementById("title_movie").innerHTML,
+  			cinema:document.getElementById("cinema").value,
+  			date:document.getElementById("datedate").value,
+  			time:document.getElementById("timetime").value,
+  			seat:"TBH",
+  		}
+  		localStorage.setItem(id_id, JSON.stringify(data));
+  		id_id = Number(id_id)+Number(add);
+	}
+document.getElementById('cinema').addEventListener('click', cinema_selected);
+document.getElementById('datedate').addEventListener('click', date_selected);
+document.getElementById('timetime').addEventListener('click', time_selected);
+</script>
 </body>
 
 </html>
