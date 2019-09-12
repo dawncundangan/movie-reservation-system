@@ -5,9 +5,8 @@
 <title>Reservation_page</title>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarMain">
-      <a class="navbar-brand align-items-center" href="#">
+      <a class="navbar-brand align-items-center" href="index.html">
         <img src="imgs/temp-icon.png" width="30" height="30"> 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +29,12 @@
 </nav>
 </head>
 <body class="mt-5 pt-3 colorbody">
-<div class="container">
+<div class="container-fluid">
 <div class="row">
 	<div class="col-sm-6">
 	<!-- <p id="result"></p> -->
-	<div class="third"><p>SELECT A MOVIE</p></div>
-	<ul class="nav nav-pills justify-content-center" role="tablist">
+	<div class="third"><h3 class="pl-4 pt-3 pb-2 headings">SELECT A MOVIE</h3></div>
+	<ul class="nav nav-pills nav-justified pl-4 pr-1 pb-2 movie-categories" role="tablist">
   		<li class="nav-item pill-1">
     		<a class="nav-link active" data-toggle="pill" href="#pill-1">Romance</a>
   		</li>
@@ -50,10 +49,10 @@
   		</li>
 	</ul>
 	<div class="tab-content">
-    	<div id="pill-1" class="container tab-pane active">
-    		<div class="container row px-4 mx-0 mt-1">
+    	<div id="pill-1" class="container tab-pane scrollbar-near-moon active px-0">
+    		<div class="container row mx-0 mt-1">
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/tangled.jpg" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -64,7 +63,7 @@
           			</a>
     			</div>
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/aladdin.jpg" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -75,7 +74,7 @@
           			</a>
     			</div>
           <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-              <a href="#" class="d-block mb-4 h-100">
+              <a href="#" class="d-block mb-2 h-100">
                   <img src="imgs/beauty-and-the-beast.jfif" class="card-img image">
                   <div class="middle">
                 <div class="text">
@@ -87,10 +86,10 @@
           </div>
     		</div>
     	</div>
-    	<div id="pill-3" class="container tab-pane fade">
+    	<div id="pill-3" class="container tab-pane scrollbar-near-moon fade px-0">
        		<div class="container row px-4 mx-0 mt-1">
        			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/ant-man.jfif" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -101,7 +100,7 @@
           			</a>
     			</div>
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/infinity-war.jfif" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -112,7 +111,7 @@
           			</a>
     			</div>
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/guardians-of-the-galaxy.jfif" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -124,7 +123,7 @@
           			</a>
     			</div>
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/captain-marvel.jfif" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -135,7 +134,7 @@
           			</a>
     			</div>
     			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-4 h-100">
+      				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/tron.jfif" class="card-img image">
             			<div class="middle">
     						<div class="text">
@@ -147,10 +146,10 @@
     			</div>
   			</div>
     	</div>
-    <div id="pill-4" class="container tab-pane fade">
- 		<div class="container row px-4 mx-0 mt-1">
+    <div id="pill-4" class="container tab-pane scrollbar-near-moon fade px-0">
+ 		<div class="container row mx-0 mt-1">
        		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-4 h-100">
+      			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/enchanted.jpg" class="card-img image">
             		<div class="middle">
     					<div class="text">
@@ -161,7 +160,7 @@
           		</a>
     		</div>
     	<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-4 h-100">
+      			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/lion-king.jpg" class="card-img image">
             		<div class="middle">
     					<div class="text">
@@ -173,10 +172,10 @@
     	</div>
     </div>
 </div>
-    <div id="pill-5" class="container tab-pane fade">
-    	<div class="container row px-4 mx-0 mt-1">
+    <div id="pill-5" class="container tab-pane scrollbar-near-moon fade px-0">
+    	<div class="container row mx-0 mt-1">
        		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-4 h-100">
+      			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/moana.jpg" class="card-img image">  
             		<div class="middle">
     					<div class="text">
@@ -187,7 +186,7 @@
           		</a>
     		</div>
     	<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-4 h-100">
+      			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/wrinkle-in-time.jpg" class="card-img image"> 
             		<div class="middle">
     					<div class="text">
@@ -201,9 +200,15 @@
 </div>
 </div>
 </div>
+<!-- <<<<<<< HEAD
 <div class="col-sm-6" id="tabletable">
+======= -->
+<div class="col-sm-6">
+	<div class="card mt-3" id="myReservations">
+    <h3 class="pt-3 text-center headings">RESERVATIONS</h3>
+    <div id="tabletable" class="scrollbar-near-moon"></div>
+  </div>
 </div>
-
 <div class="modal fade" id="reserve1" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -224,9 +229,34 @@
     				<div class="dropdown">
     					<select name="cinema" id="cinema" class="cinema">
     						<option value="cinema" selected>Cinema Number</option>
+  							<option value="cinema1">Cinema 1</option>
+  							<option value="cinema2">Cinema 2</option>
+  							<option value="cinema3">Cinema 3</option>
+  							<option value="cinema4">Cinema 4</option>
 						</select>
 						<select name="datedate" id="datedate" class="datedate">
     						<option value="datedate" selected>Date</option>
+  							<option value="Sep 04">Sep 04</option>
+  							<option value="Sep 05">Sep 05</option>
+  							<option value="Sep 06">Sep 06</option>
+  							<option value="Sep 07">Sep 07</option>
+  							<option value="Sep 08">Sep 08</option>
+  							<option value="Sep 09">Sep 09</option>
+  							<option value="Sep 10">Sep 10</option>
+  							<option value="Sep 11">Sep 11</option>
+  							<option value="Sep 12">Sep 12</option>
+  							<option value="Sep 13">Sep 13</option>
+  							<option value="Sep 14">Sep 14</option>
+  							<option value="Sep 15">Sep 15</option>
+  							<option value="Sep 16">Sep 16</option>
+  							<option value="Sep 17">Sep 17</option>
+  							<option value="Sep 18">Sep 18</option>
+  							<option value="Sep 19">Sep 19</option>
+  							<option value="Sep 20">Sep 20</option>
+  							<option value="Sep 21">Sep 21</option>
+  							<option value="Sep 22">Sep 22</option>
+  							<option value="Sep 23">Sep 23</option>
+  							<option value="Sep 24">Sep 24</option>
   							
 						</select>
     					<select name="timetime" id="timetime" class="timetime">
@@ -247,8 +277,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="jsfile.js"></script>
-
+<script type="text/javascript" src="js/reservation.js"></script>
 </body>
 
 </html>
