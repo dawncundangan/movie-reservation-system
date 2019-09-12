@@ -26,17 +26,18 @@ $(document).ready(function() {
 		htmlString += "</div>";
 	}
 	$("#cinemaSeats").html(htmlString);
+
 	// add seat-taken class to occupied seats
 
 	$(".seat-cards").on("click", function() {
 
-		if($(this).hasClass("seat-taken")) {
+		if($(this).hasClass("take-seat")) {
 			totalSeats--;
 			totalAmount -= price;
 
 			$("#popcorn" + $(this).attr('id')).remove();
 			$(this).addClass("seat-cards");
-			$(this).removeClass("seat-taken");
+			$(this).removeClass("take-seat");
 			occupiedSeats.splice( $.inArray($(this).attr("id"), occupiedSeats), 1 );
 			$("#totalSeatCount").val(totalSeats);
 			$("#totalAmount").text(totalAmount.toFixed(2));
@@ -48,7 +49,7 @@ $(document).ready(function() {
 			htmlString += "<img src='imgs/popcorn.png' class='card-img popcorn'></div>"
 			
 			$(this).append(htmlString);
-			$(this).addClass("seat-taken");
+			$(this).addClass("take-seat");
 			$(this).removeClass("seat-cards");
 			occupiedSeats.push($(this).attr("id"));
 			$("#totalSeatCount").val(totalSeats);
