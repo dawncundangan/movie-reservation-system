@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	var htmlString = "";
 	var rowHeadings = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+	var occupiedSeats = [];
+	var totalSeats = 0;
+	var totalAmount = 0;
+	var price = 250;
 
 	for(var rows = 1; rows <= 9; rows++) {
 		index = rows - 1;
@@ -22,8 +26,33 @@ $(document).ready(function() {
 		htmlString += "</div>";
 	}
 	$("#cinemaSeats").html(htmlString);
-});
+	// add seat-taken class to occupied seats
 
-$(".seat-cards").on("click", function() {
-	//console.log($(this).id);
+	$(".seat-cards").on("click", function() {
+
+		if($(this).hasClass("seat-taken")) {
+			totalSeats--;
+			totalAmount -= price;
+
+			$("#popcorn" + $(this).attr('id')).remove();
+			$(this).addClass("seat-cards");
+			$(this).removeClass("seat-taken");
+			occupiedSeats.splice( $.inArray($(this).attr("id"), occupiedSeats), 1 );
+			$("#totalSeatCount").val(totalSeats);
+			$("#totalAmount").text(totalAmount.toFixed(2));
+		} else {
+			totalSeats++;
+			totalAmount += price;
+
+			htmlString = "<div class='card-img-overlay p-2 text-center' id='popcorn" + $(this).attr("id") + "'>";
+			htmlString += "<img src='imgs/popcorn.png' class='card-img popcorn'></div>"
+			
+			$(this).append(htmlString);
+			$(this).addClass("seat-taken");
+			$(this).removeClass("seat-cards");
+			occupiedSeats.push($(this).attr("id"));
+			$("#totalSeatCount").val(totalSeats);
+			$("#totalAmount").text(totalAmount.toFixed(2));
+		}
+	});
 });
