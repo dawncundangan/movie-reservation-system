@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,7 +19,7 @@
     <script src="js/seatplan.js"></script>
 
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon"/>
-    <title> Cinema World - Create reservation </title>
+    <title> Cinema World - Buy tickets </title>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarMain">
@@ -32,11 +31,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto px-2">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="reservations.html">Reservation</a>
+            <a class="nav-link" href="index.html">
+              Home             
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> 
+              Reservation
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -46,287 +50,281 @@
       </div>    
     </nav>
   </head>
-<body class="mt-5 pt-3 colorbody">
-<div class="container-fluid">
-<div class="row">
-	<div class="container-fluid col-md-6 col-sm-12">
-	<!-- <p id="result"></p> -->
-	<div class="third"><h3 class="pl-4 pt-3 pb-2 headings">SELECT A MOVIE</h3></div>
-	<ul class="nav nav-pills nav-justified pl-4 pr-1 pb-2 movie-categories" role="tablist">
-  		<li class="nav-item pill-1">
-    		<a class="nav-link active" data-toggle="pill" href="#pill-1">Romance</a>
-  		</li>
-  		<li class="nav-item pill-3">
-    		<a class="nav-link" data-toggle="pill" href="#pill-3">Action</a>
-  		</li>
-  		<li class="nav-item pill-4">
-    		<a class="nav-link" data-toggle="pill" href="#pill-4">Fantasy</a>
-  		</li>
-  		<li class="nav-item pill-5">
-    		<a class="nav-link" data-toggle="pill" href="#pill-5">Family</a>
-  		</li>
-	</ul>
-	<div class="tab-content">
-    	<div id="pill-1" class="container tab-pane scrollbar-near-moon active px-0">
-    		<div class="container row mx-0 mt-1">
-    			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
-            			<img src="imgs/tangled.jpg" class="card-img image">
-            			<div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Tangled</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">1hr 45mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('1')">Buy Ticket</button>
-            </div>
+  <body class="mt-5 pt-3 colorbody">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container-fluid col-md-6 col-sm-12">
+          <div class="third"><h3 class="pl-4 pt-3 pb-2 headings">SELECT A MOVIE</h3></div>	       
+          <ul class="nav nav-pills nav-justified pl-4 pr-1 pb-2 movie-categories" role="tablist">
+  		      <li class="nav-item pill-1">
+    		      <a class="nav-link active" data-toggle="pill" href="#pill-1">Romance</a>
+  		      </li>
+  		      <li class="nav-item pill-3">
+    		      <a class="nav-link" data-toggle="pill" href="#pill-3">Action</a>
+  		      </li>
+  		      <li class="nav-item pill-4">
+    		      <a class="nav-link" data-toggle="pill" href="#pill-4">Fantasy</a>
+  		      </li>
+  		      <li class="nav-item pill-5">
+    		      <a class="nav-link" data-toggle="pill" href="#pill-5">Family</a>
+  		      </li>
+          </ul>
+          <div class="tab-content">
+          	<div id="pill-1" class="container tab-pane scrollbar-near-moon active px-0">
+          		<div class="container row mx-0 mt-1">
+          			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+      				    <a href="#" class="d-block mb-2 h-100">
+              			<img src="imgs/tangled.jpg" class="card-img image">
+              			<div class="card-img-overlay text-center movies-now-showing">
+                      <div class="pt-sm-2 pt-m-1">
+                        <h4 class="movie-title"><b>Tangled</b></h4><br>
+                        <p class="showing-datetime mb-0">Now Showing</p> 
+                        <p class="showing-datetime my-0">1hr 45mins</p>
+                        <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
+                      </div>
+                      <div class="pt-sm-5 pt-md-3">
+                        <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('1')">Buy Ticket</button>
+                      </div>
+                    </div>
+            			</a>
+                </div>
+                <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+                  <a href="#" class="d-block mb-2 h-100">
+                		<img src="imgs/aladdin.jpg" class="card-img image">
+                		<div class="card-img-overlay text-center movies-now-showing">
+                      <div class="pt-sm-2 pt-m-1">
+                        <h4 class="movie-title"><b>Aladdin</b></h4><br>
+                        <p class="showing-datetime mb-0">Now Showing</p> 
+                        <p class="showing-datetime my-0">2hrs 13mins</p>
+                        <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
+                      </div>
+                      <div class="pt-sm-5 pt-md-3">
+                        <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('0')">Buy Ticket</button>
+                      </div>
+                    </div>
+            		  </a>
+                </div>
+                <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+                  <a href="#" class="d-block mb-2 h-100">
+                    <img src="imgs/beauty-and-the-beast.jfif" class="card-img image">
+                    <div class="card-img-overlay text-center movies-now-showing">
+                      <div class="pt-sm-2 pt-m-1">
+                        <h5 class="movie-title"><b>Beauty and the Beast</b></h5><br>
+                        <p class="showing-datetime mb-0">Now Showing</p> 
+                        <p class="showing-datetime my-0">2hrs 10mins</p>
+                        <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
+                      </div>
+                      <div class="pt-sm-5 pt-md-3">
+                        <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('11')">Buy Ticket</button>
+                      </div>
+                    </div>
+                  </a>
+              </div>
+    		    </div>
           </div>
-          			</a>
-    			</div>
-    			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
-            			<img src="imgs/aladdin.jpg" class="card-img image">
-            			<div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Aladdin</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 13mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('0')">Buy Ticket</button>
-            </div>
-          </div>
-          			</a>
-    			</div>
-          <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-              <a href="#" class="d-block mb-2 h-100">
-                  <img src="imgs/beauty-and-the-beast.jfif" class="card-img image">
-                  <div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h5 class="movie-title"><b>Beauty and the Beast</b></h5><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 10mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('11')">Buy Ticket</button>
-            </div>
-          </div>
-                </a>
-          </div>
-    		</div>
-    	</div>
-    	<div id="pill-3" class="container tab-pane scrollbar-near-moon fade px-0">
-       		<div class="container row px-4 mx-0 mt-1">
-       			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
+          <div id="pill-3" class="container tab-pane scrollbar-near-moon fade px-0">
+            <div class="container row px-4 mx-0 mt-1">
+         			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+        				<a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/ant-man.jfif" class="card-img image">
             			<div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Ant Man</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 30mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('2')">Buy Ticket</button>
-            </div>
-          </div>
-          			</a>
-    			</div>
-    			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
+                    <div class="pt-sm-2 pt-m-1">
+                      <h4 class="movie-title"><b>Ant Man</b></h4><br>
+                      <p class="showing-datetime mb-0">Now Showing</p> 
+                      <p class="showing-datetime my-0">2hrs 30mins</p>
+                      <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                    </div>
+                    <div class="pt-sm-5 pt-md-3">
+                      <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('2')">Buy Ticket</button>
+                    </div>
+                  </div>
+            		</a>
+              </div>
+              <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+      				  <a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/infinity-war.jfif" class="card-img image">
             			<div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Infinity War</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 59mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('3')">Buy Ticket</button>
-            </div>
-          </div>
+                    <div class="pt-sm-2 pt-m-1">
+                      <h4 class="movie-title"><b>Infinity War</b></h4><br>
+                      <p class="showing-datetime mb-0">Now Showing</p> 
+                      <p class="showing-datetime my-0">2hrs 59mins</p>
+                      <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                    </div>
+                    <div class="pt-sm-5 pt-md-3">
+                      <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('3')">Buy Ticket</button>
+                    </div>
+                  </div>
           			</a>
-    			</div>
-    			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
+              </div>
+              <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+      				  <a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/guardians-of-the-galaxy.jfif" class="card-img image">
-            			 <div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h5 class="movie-title"><b>Guardians of the Galaxy</b></h5><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 45mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('4')">Buy Ticket</button>
-            </div>
-          </div>
+                  <div class="card-img-overlay text-center movies-now-showing">
+                    <div class="pt-sm-2 pt-m-1">
+                      <h5 class="movie-title"><b>Guardians of the Galaxy</b></h5><br>
+                      <p class="showing-datetime mb-0">Now Showing</p> 
+                      <p class="showing-datetime my-0">2hrs 45mins</p>
+                      <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                    </div>
+                    <div class="pt-sm-5 pt-md-3">
+                      <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('4')">Buy Ticket</button>
+                    </div>
+                  </div>
           			</a>
-    			</div>
-    			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
+              </div>
+              <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+      				  <a href="#" class="d-block mb-2 h-100">
             			<img src="imgs/captain-marvel.jfif" class="card-img image">
-            			 <div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Captain Marvel</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 50mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('5')">Buy Ticket</button>
-            </div>
-          </div>
-          			</a>
-    			</div>
-    			<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      				<a href="#" class="d-block mb-2 h-100">
-            			<img src="imgs/tron.jfif" class="card-img image">
-            			<div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Tron</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 05mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('6')">Buy Ticket</button>
-            </div>
-          </div>
-          			</a>
-    			</div>
-  			</div>
-    	</div>
-    <div id="pill-4" class="container tab-pane scrollbar-near-moon fade px-0">
- 		<div class="container row mx-0 mt-1">
-       		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-2 h-100">
-            		<img src="imgs/enchanted.jpg" class="card-img image">
-            		<div class="card-img-overlay text-center movies-now-showing">
-              <div class="pt-sm-2 pt-m-1">
-                <h4 class="movie-title"><b>Enchanted</b></h4><br>
-                <p class="showing-datetime mb-0">Now Showing</p> 
-                <p class="showing-datetime my-0">2hrs 07mins</p>
-                <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-              </div>
-              <div class="pt-sm-5 pt-md-3">
-                <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('10')">Buy Ticket</button>
+                    <div class="card-img-overlay text-center movies-now-showing">
+                      <div class="pt-sm-2 pt-m-1">
+                        <h4 class="movie-title"><b>Captain Marvel</b></h4><br>
+                        <p class="showing-datetime mb-0">Now Showing</p> 
+                        <p class="showing-datetime my-0">2hrs 50mins</p>
+                        <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                      </div>
+                      <div class="pt-sm-5 pt-md-3">
+                        <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('5')">Buy Ticket</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+                  <a href="#" class="d-block mb-2 h-100">
+              			<img src="imgs/tron.jfif" class="card-img image">
+              			<div class="card-img-overlay text-center movies-now-showing">
+                      <div class="pt-sm-2 pt-m-1">
+                        <h4 class="movie-title"><b>Tron</b></h4><br>
+                        <p class="showing-datetime mb-0">Now Showing</p> 
+                        <p class="showing-datetime my-0">2hrs 05mins</p>
+                        <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                      </div>
+                      <div class="pt-sm-5 pt-md-3">
+                        <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('6')">Buy Ticket</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-          		</a>
-    		</div>
-    	<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-2 h-100">
+            <div id="pill-4" class="container tab-pane scrollbar-near-moon fade px-0">
+              <div class="container row mx-0 mt-1">
+                <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+                  <a href="#" class="d-block mb-2 h-100">
+                  <img src="imgs/enchanted.jpg" class="card-img image">
+            		  <div class="card-img-overlay text-center movies-now-showing">
+                    <div class="pt-sm-2 pt-m-1">
+                      <h4 class="movie-title"><b>Enchanted</b></h4><br>
+                      <p class="showing-datetime mb-0">Now Showing</p> 
+                      <p class="showing-datetime my-0">2hrs 07mins</p>
+                      <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                    </div>
+                    <div class="pt-sm-5 pt-md-3">
+                      <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('10')">Buy Ticket</button>
+                    </div>
+                  </div>
+          		  </a>
+    		      </div>
+              <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+                <a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/lion-king.jpg" class="card-img image">
             		<div class="card-img-overlay text-center movies-now-showing">
-            <div class="pt-sm-2 pt-m-1">
-              <h4 class="movie-title"><b>Lion King</b></h4><br>
-              <p class="showing-datetime mb-0">Now Showing</p> 
-              <p class="showing-datetime my-0">2hrs 07mins</p>
-              <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
-            </div>
-            <div class="pt-sm-5 pt-md-3">
-              <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('7')">Buy Ticket</button>
+                  <div class="pt-sm-2 pt-m-1">
+                    <h4 class="movie-title"><b>Lion King</b></h4><br>
+                    <p class="showing-datetime mb-0">Now Showing</p> 
+                    <p class="showing-datetime my-0">2hrs 07mins</p>
+                    <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
+                  </div>
+                  <div class="pt-sm-5 pt-md-3">
+                    <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('7')">Buy Ticket</button>
+                  </div>
+                </div>
+          		</a>
             </div>
           </div>
-          		</a>
-    	</div>
-    </div>
-</div>
-    <div id="pill-5" class="container tab-pane scrollbar-near-moon fade px-0">
-    	<div class="container row mx-0 mt-1">
-       		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-2 h-100">
+        </div>
+        <div id="pill-5" class="container tab-pane scrollbar-near-moon fade px-0">
+        	<div class="container row mx-0 mt-1">
+         		<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+        			<a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/moana.jpg" class="card-img image">  
             		<div class="card-img-overlay text-center movies-now-showing">
-              <div class="pt-sm-2 pt-m-1">
-                <h4 class="movie-title"><b>Moana</b></h4><br>
-                <p class="showing-datetime mb-0">Now Showing</p> 
-                <p class="showing-datetime my-0">2hrs 1min</p>
-                <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
-              </div>
-              <div class="pt-sm-5 pt-md-3">
-                <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('8')">Buy Ticket</button>
-              </div>
-            </div> 
+                  <div class="pt-sm-2 pt-m-1">
+                    <h4 class="movie-title"><b>Moana</b></h4><br>
+                    <p class="showing-datetime mb-0">Now Showing</p> 
+                    <p class="showing-datetime my-0">2hrs 1min</p>
+                    <span class="badge badge-warning mb-sm-2 mb-md-1">PG</span>
+                  </div>
+                  <div class="pt-sm-5 pt-md-3">
+                    <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('8')">Buy Ticket</button>
+                  </div>
+                </div> 
           		</a>
-    		</div>
-    	<div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
-      			<a href="#" class="d-block mb-2 h-100">
+    		    </div>
+            <div class="card col-md-4 col-6 px-1 my-1 homepage-movie-cards container-image">
+              <a href="#" class="d-block mb-2 h-100">
             		<img src="imgs/wrinkle-in-time.jpg" class="card-img image"> 
             		<div class="card-img-overlay text-center movies-now-showing">
-              <div class="pt-sm-2 pt-m-1">
-                <h4 class="movie-title"><b>A Wrinkle in Time</b></h4><br>
-                <p class="showing-datetime mb-0">Now Showing</p> 
-                <p class="showing-datetime my-0">1hr 57mins</p>
-                <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
-              </div>
-              <div class="pt-sm-5 pt-md-3">
-                <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('9')">Buy Ticket</button>
-              </div>
-            </div>
+                  <div class="pt-sm-2 pt-m-1">
+                    <h4 class="movie-title"><b>A Wrinkle in Time</b></h4><br>
+                    <p class="showing-datetime mb-0">Now Showing</p> 
+                    <p class="showing-datetime my-0">1hr 57mins</p>
+                    <span class="badge badge-warning mb-sm-2 mb-md-1">PG-13</span>
+                  </div>
+                  <div class="pt-sm-5 pt-md-3">
+                    <button class="btn btn-sm button button5" data-toggle="modal" data-target="#reserve1"  onclick="showDetails('9')">Buy Ticket</button>
+                  </div>
+                </div>
           		</a>
-    	</div>
-    </div>
-</div>
-</div>
-</div>
-<div class="container-fluid col-md-6 col-sm-12">
-	<div class="card mt-3" id="myReservations">
-    <h3 class="pt-3 text-center headings">RESERVATIONS</h3>
-    <div id="tabletable" class="scrollbar-near-moon"></div>
-  </div>
-</div>
-<div class="modal fade" id="reserve1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          	<div class="row">
-  				<div class="col-sm-8">
-  					<h4><span id="title_movie"><b></b></span><span class="badge badge-warning badge-class" id="badge_movie"></span></h4><br>
-    				<h6 id="date_movie"><i></i></h6>
-    				<p><span id="description_movie"></span><br><br>
-    				<b>Director: </b><span id="director_movie"></span><br>
-					<b>Writers: </b><span id="writer_movie"></span><br>
-					<b>Stars: </b><span id="stars_movie"></span></p>	
-    			</div>
-  				<div class="col-sm-4"><img id="image_movie" src="" class="card-img image">
-    			</div>
-			</div>
-			<hr>
-    				<div class="dropdown">
-    					<select name="cinema" id="cinema" class="cinema">
-    						<option value="cinema" selected>Cinema Number</option>
-						</select>
-						<select name="datedate" id="datedate" class="datedate">
-    						<option value="datedate" selected>Date</option>
-  							
-						</select>
-    					<select name="timetime" id="timetime" class="timetime">
-    						<option value="timetime" selected>Time</option>
-  							<option value="08:00 PM">08:00 PM</option>
-						</select>
-					</div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default button1" onclick="addReservations()" id="reserveBtn" >Select Seat plan</button>
-          <!-- <button type="button" class="btn btn-default button1" onclick="location.href='seatplan.html'" id="reserveBtn" >Select Seat plan</button> -->
-          <button type="button" class="btn btn-default button2" data-dismiss="modal" onclick="resetInput()">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/reservation.js"></script>
-</body>
-
+    <div class="container-fluid col-md-6 col-sm-12">
+    	<div class="card mt-3" id="myReservations">
+        <h3 class="pt-3 text-center headings">RESERVATIONS</h3>
+        <div id="tabletable" class="scrollbar-near-moon"></div>
+      </div>
+    </div>
+    <div class="modal fade" id="reserve1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+          	<div class="row">
+      				<div class="col-sm-8">
+      					<h4><span id="title_movie"><b></b></span><span class="badge badge-warning badge-class" id="badge_movie"></span></h4><br>
+        				<h6 id="date_movie"><i></i></h6>
+        				<p><span id="description_movie"></span><br><br>
+        				<b>Director: </b><span id="director_movie"></span><br>
+                <b>Writers: </b><span id="writer_movie"></span><br>
+                <b>Stars: </b><span id="stars_movie"></span></p>	
+        			</div>
+      				<div class="col-sm-4"><img id="image_movie" src="" class="card-img image">
+        			</div>
+            </div>
+            <hr>
+    				<div class="dropdown">
+    					<select name="cinema" id="cinema" class="cinema">
+    						<option value="cinema" selected>Cinema Number</option>
+						  </select>
+						  <select name="datedate" id="datedate" class="datedate">
+    						<option value="datedate" selected>Date</option>
+						  </select>
+    					<select name="timetime" id="timetime" class="timetime">
+    						<option value="timetime" selected>Time</option>
+  							<option value="08:00 PM">08:00 PM</option>
+						  </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default button1" onclick="addReservations()" id="reserveBtn" >Select Seat plan</button>
+            <button type="button" class="btn btn-default button2" data-dismiss="modal" onclick="resetInput()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/reservation.js"></script>
+  </body>
 </html>

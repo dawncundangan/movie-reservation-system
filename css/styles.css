@@ -232,6 +232,10 @@ hr {
     margin-right: 1em;
 }
 
+.modal-body {
+	color: black;
+}
+
 .movie-categories .nav-link:hover {
 	transition-duration: 0.1s;
 	background-color: gray !important;
