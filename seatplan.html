@@ -105,43 +105,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      var queryString = decodeURIComponent(window.location.search);
-      queryString = queryString.substring(1);
-      if(queryString!=''){
-        var queries = queryString.split("&");
-      var title, cinema, date, time;
-      for (var i = 0; i < queries.length; i++)
-      {
-      title = queries[0];
-      cinema = queries[1];
-      date = queries[2];
-      time = queries[3];
-      console.log(queries[i]);
-      }
-      document.getElementById("title_movie").innerHTML = JSON.parse(localStorage.getItem(title)).name;
-      document.getElementById("date_movie").innerHTML = date;
-      document.getElementById("time_movie").innerHTML = time;
-      document.getElementById("image_id").src = JSON.parse(localStorage.getItem(title)).image;
-      document.getElementById("datetime").innerHTML = date + " | " + time;
-      document.getElementById("cinemaNumber").innerHTML = cinema;
-      console.log(JSON.parse(localStorage.getItem(title)).name);
-      }
-      
-      function checkOut(){
-        const  data= {
-        title: document.getElementById("title_movie").innerHTML,
-        cinema:document.getElementById("cinemaNumber").innerHTML,
-        date:document.getElementById("date_movie").innerHTML,
-        time:document.getElementById("time_movie").innerHTML,
-        seat:"TBA",
-      }
-      var a = [];
-      a = JSON.parse(localStorage.getItem('tableData'));
-      a.push(data);
-      localStorage.setItem('tableData', JSON.stringify(a));
-      /*window.location.href = "index.html";*///need to go back to reservationspage
-      }
-    </script>>
   </body>
 </html>
