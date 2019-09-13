@@ -97,8 +97,9 @@ $(document).ready(function() {
 	    thisReservation = JSON.parse(localStorage.getItem('reservations'));
 	    thisReservation.push(details);
 	    localStorage.setItem('reservations', JSON.stringify(thisReservation));
+	    window.close();
 	    window.open("reservations.html");
-		window.location = "reservations.html"
+		/*window.location = "reservations.html"*/
     });
 });
 
