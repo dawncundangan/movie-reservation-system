@@ -195,10 +195,10 @@ if (typeof(Storage) !== "undefined") {
  localStorage.setItem('BAB', JSON.stringify(BAB));
   // Retrieve
   /*console.log(JSON.parse(localStorage.getItem('aladdin')).description);*/
-if(localStorage.getItem('tableData')==null){
+if(localStorage.getItem('reservations')==null){
   var a = [];
-  a.push(JSON.parse(localStorage.getItem('tableData')));
-  localStorage.setItem('tableData', JSON.stringify(a));
+  a.push(JSON.parse(localStorage.getItem('reservations')));
+  localStorage.setItem('reservations', JSON.stringify(a));
 }
   
 }
@@ -343,14 +343,14 @@ if(queryString!=''){
     }
   }
   function getData() {
-    return JSON.parse(localStorage.getItem('tableData') || "[]");
+    return JSON.parse(localStorage.getItem('reservations') || "[]");
 }
 createTable();
 function createTable(){
   const data = getData();
   if(data!=null){
     console.log(data);
-    var $table  =  $('<table class="table table-striped table-dark rounded"><thead><tr><th scope="col">Movie Title</th><th scope="col">Cinema Number</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Seat No.</th><th scope="col">Action</th></tr></thead></table>');
+    var $table  =  $('<table class="table table-striped table-dark table-sm compact rounded"><thead><tr><th scope="col">Movie</th><th scope="col">Cinema</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Seats</th><th scope="col">Amount</th><th scope="col">Action</th></tr></thead></table>');
     for(var i=1;i<data.length;i++)
     {
     var $tr =  $('<tr></tr>');
@@ -358,28 +358,31 @@ function createTable(){
     var $td2 =  $('<td></td>');
     var $td3 =  $('<td></td>');
     var $td4 =  $('<td></td>');
-    var $td5 =  $('<td></td>');
-    var $td6 =  $('<td><button type="button" class="btn btn-default button2" onclick="deleteData(this)">Cancel</button></td>');
+    var $td5 =  $('<td class="text-right"></td>');
+    var $td6 =  $('<td class="text-right"></td>');
+    var $td7 =  $('<td class="text-right"><button type="button" class="btn btn-default button2" onclick="deleteData(this)">Cancel</button></td>');
     $td1.append(data[i].title);
-    $td2.append(data[i].cinema);
+    $td2.append("Cinema " + data[i].cinema.slice(7));
     $td3.append(data[i].date);
     $td4.append(data[i].time);
-    $td5.append(data[i].seat);
+    $td5.append(data[i].seat.length);
+    $td6.append(data[i].amountDue);
     $tr.append($td1);
     $tr.append($td2);
     $tr.append($td3);
     $tr.append($td4);
     $tr.append($td5);
     $tr.append($td6);
+    $tr.append($td7);
     $table.append($tr);
     }
     $('div#tabletable').empty().append($table);
   }
 }
   function deleteData(element){;
-    tableData=JSON.parse(localStorage.getItem('tableData'));
-    tableData.splice(element.parentNode.parentNode.rowIndex, 1);
-    localStorage.setItem('tableData',JSON.stringify(tableData));
+    reservations=JSON.parse(localStorage.getItem('reservations'));
+    reservations.splice(element.parentNode.parentNode.rowIndex, 1);
+    localStorage.setItem('reservations',JSON.stringify(reservations));
     createTable();   
   }  
   function addReservations(){

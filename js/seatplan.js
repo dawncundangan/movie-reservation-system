@@ -30,7 +30,6 @@ $(document).ready(function() {
 	// add seat-taken class to occupied seats
 
 	$(".seat-cards").on("click", function() {
-
 		if($(this).hasClass("take-seat")) {
 			totalSeats--;
 			totalAmount -= price;
@@ -41,6 +40,7 @@ $(document).ready(function() {
 			occupiedSeats.splice( $.inArray($(this).attr("id"), occupiedSeats), 1 );
 			$("#totalSeatCount").val(totalSeats);
 			$("#totalAmount").text(totalAmount.toFixed(2));
+			checkSelectedSeats();
 		} else {
 			totalSeats++;
 			totalAmount += price;
@@ -54,7 +54,47 @@ $(document).ready(function() {
 			occupiedSeats.push($(this).attr("id"));
 			$("#totalSeatCount").val(totalSeats);
 			$("#totalAmount").text(totalAmount.toFixed(2));
+			checkSelectedSeats();
 		}
 	});
+
+	function checkSelectedSeats() {
+		if(occupiedSeats.length > 0) {
+			$("#checkOut").prop("disabled", false);
+		} else {
+			$("#checkOut").prop("disabled", true);
+		}
+	}
+
+	var reservationDetails = decodeURIComponent(window.location.search);
+	    reservationDetails = reservationDetails.substring(1);
+    if(reservationDetails != "") {
+        var reservation = reservationDetails.split("&");
+	    var title, cinema, date, time;
+	    for (var i = 0; i < reservation.length; i++) {
+	      	title = reservation[0];
+	      	cinema = reservation[1];
+	      	date = reservation[2];
+	      	time = reservation[3];
+      	}
+      	$("#movieImage").attr("src", JSON.parse(localStorage.getItem(title)).image);
+      	$("#cinemaNumber").val("Cinema " + cinema.slice(7));
+      	$("#datetime").val(date + " | " + time);
+    }
+      
+    $("#checkOut").on("click", function() {
+        const  details = {
+	        title: JSON.parse(localStorage.getItem(title)).name,
+	        cinema: cinema,
+	        date: date,
+	        time: time,
+	        seat: occupiedSeats,
+	        amountDue: $("#totalAmount").html()
+    	}
+	    var thisReservation = [];
+	    thisReservation = JSON.parse(localStorage.getItem('reservations'));
+	    thisReservation.push(details);
+	    localStorage.setItem('reservations', JSON.stringify(thisReservation));
+    });
 });
 

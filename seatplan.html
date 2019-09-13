@@ -51,27 +51,17 @@
     <div class="container-fluid row d-flex justify-content-center pt-3 px-0 mx-0">
       <div class="container col-md-3">
         <div class="card col-sm-6 offset-3">
-          <img src="" class="card-img" id="image_id">
+          <img src="" class="card-img" id="movieImage">
         </div>
         <hr class="mt-2 mb-0">
         <form class="mx-3 mt-1" id="seatplanForm">
           <div class="form-group mb-1">
-            <p id="title_movie" hidden ></p>
-            <p  id="time_movie" hidden></p>
-            <p  id="date_movie" hidden></p>
-            <p  id="seat_movie" hidden></p>
             <label for="cinemaNumber">CINEMA: </label>
-            <h6 id="cinemaNumber"></h6>
-            <!-- <select class="form-control form-control-sm"  disabled="">
-              <option></option>
-            </select> -->
+            <input class="form-control form-control-sm" type="text" value="" id="cinemaNumber" disabled>
           </div>
           <div class="form-group mb-1">
             <label for="datetime">DATE AND TIME: </label>
-            <h6 id="datetime"></h6>
-            <!-- <select class="form-control form-control-sm" id="datetime" disabled>
-              <option></option>
-            </select> -->
+            <input class="form-control form-control-sm" type="text" value="" id="datetime" disabled>
           </div>
           <div class="form-group mb-1">
             <label for="date">TOTAL SEAT COUNT: </label>
@@ -81,7 +71,9 @@
             <label for="date" class="mb-0">TOTAL AMOUNT DUE: </label>
             <p class="text-right mb-0">₱ <span id="totalAmount">0.00</span></p>
           </div>
-          <button class="btn btn-sm btn-block btn-danger" onclick="checkOut()">Check out</button>
+          <button class="btn btn-sm btn-block btn-danger" id="checkOut" disabled>
+            Check out
+          </button>
         </form>
         <hr class="my-2">
         <div class="container" id="legend">
