@@ -77,14 +77,15 @@ $(document).ready(function() {
 	      	date = reservation[2];
 	      	time = reservation[3];
       	}
-      	$("#movieImage").attr("src", JSON.parse(localStorage.getItem(title)).image);
+      	$("#movieImage").attr("src", JSON.parse(localStorage.getItem("movies"))[title].image);
       	$("#cinemaNumber").val("Cinema " + cinema.slice(7));
       	$("#datetime").val(date + " | " + time);
     }
       
     $("#checkOut").on("click", function() {
+    	console.log("haha");
         const  details = {
-	        title: JSON.parse(localStorage.getItem(title)).name,
+	        title: JSON.parse(localStorage.getItem("movies"))[title].name,
 	        cinema: cinema,
 	        date: date,
 	        time: time,

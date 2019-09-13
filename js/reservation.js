@@ -1,4 +1,4 @@
-
+/*
 const aladdin = {
     name: "Aladdin",
     badge: "PG",
@@ -174,13 +174,13 @@ const BAB = {
     image:"imgs/beauty-and-the-beast.jfif",
     cinemas:["cinema_4"],
     cinema_4:["Sept 22","Sept 23","Sept 24"]
-}
+}*/
 
 
 
 if (typeof(Storage) !== "undefined") {
   // Store
- localStorage.setItem('aladdin', JSON.stringify(aladdin));
+/* localStorage.setItem('aladdin', JSON.stringify(aladdin));
  localStorage.setItem('tangled', JSON.stringify(tangled));
  localStorage.setItem('antMan', JSON.stringify(antMan));
  localStorage.setItem('infinitywar', JSON.stringify(infinitywar));
@@ -191,7 +191,7 @@ if (typeof(Storage) !== "undefined") {
  localStorage.setItem('moana', JSON.stringify(moana));
  localStorage.setItem('awt', JSON.stringify(awt));
  localStorage.setItem('enchanted', JSON.stringify(enchanted));
- localStorage.setItem('BAB', JSON.stringify(BAB));
+ localStorage.setItem('BAB', JSON.stringify(BAB));*/
   // Retrieve
   /*console.log(JSON.parse(localStorage.getItem('aladdin')).description);*/
 if(localStorage.getItem('reservations')==null){
@@ -222,21 +222,21 @@ if(queryString!=''){
     cinema_selected();
     window.location.href = "reservations.html";
   }
-  function showDetails(title) {
+  function showDetails(index) {
     var sel = document.getElementById('cinema');
     for (i = sel.length - 1; i > 0; i--) {
       sel.remove(i);
     }
-      document.getElementById("title_movie").innerHTML =  JSON.parse(localStorage.getItem(title)).name;
-      document.getElementById("badge_movie").innerHTML=JSON.parse(localStorage.getItem(title)).badge;
-      document.getElementById("date_movie").innerHTML=JSON.parse(localStorage.getItem(title)).time;
-      document.getElementById("description_movie").innerHTML=JSON.parse(localStorage.getItem(title)).description;
-      document.getElementById("director_movie").innerHTML=JSON.parse(localStorage.getItem(title)).director;
-      document.getElementById("writer_movie").innerHTML=JSON.parse(localStorage.getItem(title)).writer;
-      document.getElementById("stars_movie").innerHTML=JSON.parse(localStorage.getItem(title)).stars;
-      document.getElementById("image_movie").src = JSON.parse(localStorage.getItem(title)).image;
+      document.getElementById("title_movie").innerHTML =  JSON.parse(localStorage.getItem("movies"))[index].name;
+      document.getElementById("badge_movie").innerHTML=JSON.parse(localStorage.getItem("movies"))[index].badge;
+      document.getElementById("date_movie").innerHTML=JSON.parse(localStorage.getItem("movies"))[index].time;
+      document.getElementById("description_movie").innerHTML=JSON.parse(localStorage.getItem("movies"))[index].description;
+      document.getElementById("director_movie").innerHTML=JSON.parse(localStorage.getItem("movies"))[index].director;
+      document.getElementById("writer_movie").innerHTML=JSON.parse(localStorage.getItem("movies"))[index].writer;
+      document.getElementById("stars_movie").innerHTML=JSON.parse(localStorage.getItem("movies"))[index].stars;
+      document.getElementById("image_movie").src = JSON.parse(localStorage.getItem("movies"))[index].image;
   var selectCinema = document.getElementById("cinema");
-  var options = JSON.parse(localStorage.getItem(title)).cinemas;
+  var options = JSON.parse(localStorage.getItem("movies"))[index].cinemas;
   console.log(options);
   for(var i = 0; i < options.length; i++){
     console.log(options[i]);
@@ -266,48 +266,46 @@ if(queryString!=''){
     else{
       date.disabled=false;
       var titled= document.getElementById("title_movie").innerHTML;
-      console.log(titled);
+     
       if(titled=="Aladdin"){
-        titled="aladdin";
+        titled=0;
       }
       else if (titled=="Tangled"){
-        titled="tangled";
+        titled=1;
       }
       else if (titled=="Ant-Man"){
-        titled="antMan";
+        titled=2;
       }
       else if (titled=="Infinity War"){
-        titled="infinitywar";
+        titled=3;
       }
       else if (titled=="Guardians of the Galaxy"){
-        titled="gog";
+        titled=4;
       }
       else if (titled=="Captain Marvel"){
-        titled="captainmarvel";
+        titled=5;
       }
       else if (titled=="TRON: Legacy"){
-        titled="TRON";
+        titled=6;
       }
       else if (titled=="The Lion King"){
-        titled="TLK";
+        titled=7;
       }
       else if (titled=="Moana"){
-        titled="moana";
+        titled=8;
       }
       else if (titled=="A Wrinkle in Time"){
-        titled="awt";
+        titled=9;
       }
       else if (titled=="Enchanted"){
-        titled="enchanted";
+        titled=10;
       }
       else if (titled=="Beauty and the Beast"){
-        titled="BAB";
+        titled=11;
       }
       var selectedCinema = document.getElementById("cinema").value;
       var selectdate = document.getElementById("datedate");
-
-      var optionsdatedate = JSON.parse(localStorage.getItem(titled))[selectedCinema];
-      console.log(optionsdatedate);
+      var optionsdatedate = JSON.parse(localStorage.getItem("movies"))[titled][selectedCinema];
       for(var i = 0; i < optionsdatedate.length; i++){
       console.log(optionsdatedate[i]);
       var opt = optionsdatedate[i];
@@ -391,40 +389,40 @@ function createTable(){
       var selectedtime = document.getElementById("timetime").value;
       console.log(titled);
       if(titled=="Aladdin"){
-        titled="aladdin";
+        titled=0;
       }
       else if (titled=="Tangled"){
-        titled="tangled";
+        titled=1;
       }
       else if (titled=="Ant-Man"){
-        titled="antMan";
+        titled=2;
       }
       else if (titled=="Infinity War"){
-        titled="infinitywar";
+        titled=3;
       }
       else if (titled=="Guardians of the Galaxy"){
-        titled="gog";
+        titled=4;
       }
       else if (titled=="Captain Marvel"){
-        titled="captainmarvel";
+        titled=5;
       }
       else if (titled=="TRON: Legacy"){
-        titled="TRON";
+        titled=6;
       }
       else if (titled=="The Lion King"){
-        titled="TLK";
+        titled=7;
       }
       else if (titled=="Moana"){
-        titled="moana";
+        titled=8;
       }
       else if (titled=="A Wrinkle in Time"){
-        titled="awt";
+        titled=9;
       }
       else if (titled=="Enchanted"){
-        titled="enchanted";
+        titled=10;
       }
       else if (titled=="Beauty and the Beast"){
-        titled="BAB";
+        titled=11;
       }
       var title=titled;
       var cinemas=selectedCinema;
