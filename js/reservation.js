@@ -264,6 +264,8 @@ if(queryString!=''){
       document.getElementById("reserveBtn").disabled=true;
     }
     else{
+      time.disabled=true;
+      time.value = "timetime"; 
       date.disabled=false;
       var titled= document.getElementById("title_movie").innerHTML;
      
