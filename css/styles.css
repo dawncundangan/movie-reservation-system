@@ -330,6 +330,12 @@ select {
   background-color:black;
   color: white;
 }
+.button2:hover{
+	background-color: #595c5a;
+}
+.button1:hover:enabled{
+	background-color: #595c5a;
+}
 
 h6{
   font-style: bold;

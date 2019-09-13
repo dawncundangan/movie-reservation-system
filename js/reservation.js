@@ -178,7 +178,6 @@ const BAB = {
 
 
 
-
 if (typeof(Storage) !== "undefined") {
   // Store
  localStorage.setItem('aladdin', JSON.stringify(aladdin));
@@ -243,10 +242,10 @@ if(queryString!=''){
     console.log(options[i]);
     var opt = options[i];
     var el = document.createElement("option");
-    el.textContent = opt;
+    el.textContent = "Cinema " + opt.slice(7);
     el.value = opt;
     selectCinema.appendChild(el);
-    console.log(options[i]);
+    console.log(opt);
   }
   
   }
