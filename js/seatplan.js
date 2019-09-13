@@ -27,8 +27,6 @@ $(document).ready(function() {
 	}
 	$("#cinemaSeats").html(htmlString);
 
-	// add seat-taken class to occupied seats
-
 	$(".seat-cards").on("click", function() {
 		if($(this).hasClass("take-seat")) {
 			totalSeats--;
@@ -99,7 +97,6 @@ $(document).ready(function() {
 	    localStorage.setItem('reservations', JSON.stringify(thisReservation));
 	    window.close();
 	    window.open("reservations.html");
-		/*window.location = "reservations.html"*/
     });
 });
 

@@ -30,22 +30,6 @@ $(document).ready(function() {
 		$("#moviesShowing").html(htmlString);
 	}
 
-	/*var htmlString = "";
-	var cinemaNumbers = ["cinema_1", "cinema_2", "cinema_3", "cinema_4"];
-	var cinamaWithMovie = [];
-
-	for(var number = 0; number < cinemaNumbers.length; number++) {
-		var thisCinema = parseHTcinemaNumbers[number];
-		for(var movie = 0; movie < movies.length; movie++) {
-			console.log( movies[movie].cinema_1);
-	        for(var cinema = 0; cinema < movies[movie].thisCinema.length; cinema++) {
-	        	if(movies[movie].thisCinema[cinema] == moment(new Date()).format("MMM D")) {
-	        		showMovie(movie);
-	        	}
-	        }
-	    } 
-	}*/
-
     function showMovie(movie) {
     	if(cinamaWithMovie.includes(movie) == false) {
 
