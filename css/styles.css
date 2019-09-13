@@ -99,7 +99,8 @@ body {
 }
 
 .footer {
-	background-color: #a2ffd1;
+	background-color: #a2ffd1e0;
+	height: 15vh;
 }
 
 /* Seatplan Page */
