@@ -4,13 +4,17 @@ $(document).ready(function() {
 		$(".cinema-soon").addClass("btn-outline-dark");
 		$(this).removeClass("btn-outline-dark");
 		$(this).addClass("btn-outline-light");
-		// show movies now showing
+		nowShowing();
 	});
 	$(".cinema-soon").on("click", function() {
 		$(".cinema-showing").removeClass("btn-outline-light");
 		$(".cinema-showing").addClass("btn-outline-dark");
 		$(this).removeClass("btn-outline-dark");
 		$(this).addClass("btn-outline-light");
-		// show movies showing soon
+		//showingSoon();
 	});
+
+	function nowShowing() {
+		
+	}
 });
