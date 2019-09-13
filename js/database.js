@@ -10,10 +10,10 @@ const movies = [
     stars:"Will Smith, Mena Massoud, Naomi Scott",
     image:"imgs/aladdin.jpg",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_1:["Sept 4","Sept 5","Sept 6"],
-    cinema_2:["Sept 7", "Sept 8"],
-    cinema_3:["Sept 9", "Sept 10"],
-    cinema_4:["Sept 11", "Sept 12"]
+    cinema_1:["Sep 14","Sep 15","Sep 13"],
+    cinema_2:["Sep 7", "Sep 8"],
+    cinema_3:["Sep 9", "Sep 10"],
+    cinema_4:["Sep 11", "Sep 12"]
   },
   {
     name: "Tangled",
@@ -25,10 +25,10 @@ const movies = [
     stars:"Mandy Moore, Zachary Levi, Donna Murphy",
     image:"imgs/tangled.jpg",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_2:["Sept 4","Sept 5","Sept 6"],
-    cinema_3:["Sept 7", "Sept 8"],
-    cinema_4:["Sept 9", "Sept 10"],
-    cinema_1:["Sept 11", "Sept 12"]
+    cinema_2:["Sep 14","Sep 15","Sep 13"],
+    cinema_3:["Sep 7", "Sep 8"],
+    cinema_4:["Sep 9", "Sep 10"],
+    cinema_1:["Sep 11", "Sep 12"]
   },
   {
     name: "Ant-Man",
@@ -40,10 +40,10 @@ const movies = [
     stars:"Paul Rudd, Michael Douglas, Corey Stoll",
     image:"imgs/ant-man.jfif",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_3:["Sept 4","Sept 5","Sept 6"],
-    cinema_4:["Sept 7", "Sept 8"],
-    cinema_1:["Sept 9", "Sept 10"],
-    cinema_2:["Sept 11", "Sept 12"]
+    cinema_3:["Sep 4","Sep 15","Sep 6"],
+    cinema_4:["Sep 7", "Sep 13"],
+    cinema_1:["Sep 9", "Sep 10"],
+    cinema_2:["Sep 11", "Sep 12"]
   },
   {
     name: "Infinity War",
@@ -55,10 +55,10 @@ const movies = [
     stars:"Robert Downey Jr., Chris Hemsworth, Mark Ruffalo",
     image:"imgs/infinity-war.jfif",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_4:["Sept 4","Sept 5","Sept 6"],
-    cinema_1:["Sept 7", "Sept 8"],
-    cinema_2:["Sept 9", "Sept 10"],
-    cinema_3:["Sept 11", "Sept 12"]
+    cinema_4:["Sep 4","Sep 13","Sep 6"],
+    cinema_1:["Sep 7", "Sep 8"],
+    cinema_2:["Sep 9", "Sep 10"],
+    cinema_3:["Sep 11", "Sep 12"]
   },
   {
    name: "Guardians of the Galaxy",
@@ -70,10 +70,10 @@ const movies = [
     stars:"Chris Pratt, Vin Diesel, Bradley Cooper",
     image:"imgs/guardians-of-the-galaxy.jfif",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_2:["Sept 13","Sept 14","Sept 15"],
-    cinema_3:["Sept 16", "Sept 17"],
-    cinema_4:["Sept 18", "Sept 19"],
-    cinema_1:["Sept 20", "Sept 21"]
+    cinema_2:["Sep 13","Sep 14","Sep 15"],
+    cinema_3:["Sep 16", "Sep 17"],
+    cinema_4:["Sep 18", "Sep 19"],
+    cinema_1:["Sep 20", "Sep 21"]
   },
   {
     name: "Captain Marvel",
@@ -85,10 +85,10 @@ const movies = [
     stars:"Brie Larson, Samuel L. Jackson, Ben Mendelsohn",
     image:"imgs/captain-marvel.jfif",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_3:["Sept 13","Sept 14","Sept 15"],
-    cinema_4:["Sept 16", "Sept 17"],
-    cinema_1:["Sept 18", "Sept 19"],
-    cinema_2:["Sept 20", "Sept 21"]
+    cinema_3:["Sep 13","Sep 14","Sep 15"],
+    cinema_4:["Sep 16", "Sep 17"],
+    cinema_1:["Sep 18", "Sep 19"],
+    cinema_2:["Sep 20", "Sep 21"]
   },
   {
     name: "TRON: Legacy",
@@ -100,10 +100,10 @@ const movies = [
     stars:"Jeff Bridges, Garrett Hedlund, Olivia Wilde",
     image:"imgs/tron.jfif",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_4:["Sept 13","Sept 14","Sept 15"],
-    cinema_1:["Sept 16", "Sept 17"],
-    cinema_2:["Sept 18", "Sept 19"],
-    cinema_3:["Sept 20", "Sept 21"]
+    cinema_4:["Sep 13","Sep 14","Sep 15"],
+    cinema_1:["Sep 16", "Sep 17"],
+    cinema_2:["Sep 18", "Sep 19"],
+    cinema_3:["Sep 20", "Sep 21"]
   },
   {
     name: "The Lion King",
@@ -115,10 +115,10 @@ const movies = [
     stars:"Donald Glover, Beyoncé, Seth Rogen",
     image:"imgs/lion-king.jpg",
     cinemas:["cinema_1","cinema_2","cinema_3","cinema_4"],
-    cinema_1:["Sept 13","Sept 14","Sept 15"],
-    cinema_2:["Sept 16", "Sept 17"],
-    cinema_3:["Sept 18", "Sept 19"],
-    cinema_4:["Sept 20", "Sept 21"]
+    cinema_1:["Sep 13","Sep 14","Sep 15"],
+    cinema_2:["Sep 16", "Sep 17"],
+    cinema_3:["Sep 18", "Sep 19"],
+    cinema_4:["Sep 20", "Sep 21"]
   },
   {
     name: "Moana",
@@ -130,9 +130,10 @@ const movies = [
     stars:"Auli'i Cravalho, Dwayne Johnson, Rachel House",
     image:"imgs/moana.jpg",
     cinemas:["cinema_1","cinema_2","cinema_3"],
-    cinema_1:["Sept 22"],
-    cinema_2:["Sept 23"],
-    cinema_3:["Sept 24"]
+    cinema_1:["Sep 22"],
+    cinema_2:["Sep 23"],
+    cinema_3:["Sep 24"],
+    cinema_4:["Sep 24"]
   },
   {
     name: "A Wrinkle in Time",
@@ -144,9 +145,10 @@ const movies = [
     stars:"Storm Reid, Oprah Winfrey, Reese Witherspoon",
     image:"imgs/wrinkle-in-time.jpg",
     cinemas:["cinema_1","cinema_2","cinema_3"],
-    cinema_2:["Sept 22"],
-    cinema_3:["Sept 23"],
-    cinema_1:["Sept 24"],
+    cinema_2:["Sep 22"],
+    cinema_3:["Sep 23"],
+    cinema_1:["Sep 24"],
+    cinema_4:["Sep 24"]
   },
   {
     name: "Enchanted",
@@ -158,9 +160,10 @@ const movies = [
     stars:"Amy Adams, Susan Sarandon, James Marsden",
     image:"imgs/enchanted.jpg",
     cinemas:["cinema_1","cinema_2","cinema_3"],
-    cinema_3:["Sept 22"],
-    cinema_1:["Sept 23"],
-    cinema_2:["Sept 24"]
+    cinema_3:["Sep 22"],
+    cinema_1:["Sep 23"],
+    cinema_2:["Sep 24"],
+    cinema_4:["Sep 24"]
   },
   {
     name: "Beauty and the Beast",
@@ -172,11 +175,13 @@ const movies = [
     stars:" Emma Watson, Dan Stevens, Luke Evans",
     image:"imgs/beauty-and-the-beast.jfif",
     cinemas:["cinema_4"],
-    cinema_4:["Sept 22","Sept 23","Sept 24"]
+    cinema_1:["Sep 23"],
+    cinema_2:["Sep 24"],
+    cinema_3:["Sep 22"],
+    cinema_4:["Sep 22","Sep 23","Sep 24"]
   }]
 
 if(typeof(Storage) !== "undefined") {
   localStorage.setItem('movies', JSON.stringify(movies));
 }
 
-console.log(movies[0].cinema_1[0]);
