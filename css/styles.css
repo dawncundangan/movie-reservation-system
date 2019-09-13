@@ -85,9 +85,12 @@ body {
 	background-color: #13131375;
 	opacity: 1;
 }
-
+.movie-title{
+	color: white;
+}
 .showing-datetime {
 	font-size: .8em;
+	color: white;
 }
 
 .homepage-movie-cards, .seat-cards, .take-seat {
