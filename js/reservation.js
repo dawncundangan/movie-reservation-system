@@ -350,7 +350,14 @@ function createTable(){
   const data = getData();
   if(data!=null){
     console.log(data);
+<<<<<<< HEAD
     var $table  =  $('<table class="table table-striped table-dark rounded"><thead><tr><th scope="col">Movie Title</th><th scope="col">Cinema Number</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Seat No.</th><th scope="col">Action</th></tr></thead></table>');
+=======
+    var $table  =  $('<table class="table table-striped table-sm compact table-dark rounded  scrollbar-near-moon mb-0" id="reservationsTable"><thead><tr><th scope="col">Movie Title</th><th scope="col">Cinema Number</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Seat No.</th><th scope="col">Action</th></tr></thead></table>');
+    var btn = document.createElement("BUTTON");
+      btn.innerHTML = "Cancel";
+      btn.setAttribute("class", "btn btn-sm btn-danger");
+>>>>>>> Responsive homepage, seat plan
     for(var i=1;i<data.length;i++)
     {
     var $tr =  $('<tr></tr>');
