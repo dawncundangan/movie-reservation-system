@@ -91,6 +91,7 @@ $(document).ready(function() {
 	        seat: occupiedSeats,
 	        amountDue: $("#totalAmount").html()
     	}
+
 	    var thisReservation = [];
 	    thisReservation = JSON.parse(localStorage.getItem('reservations'));
 	    thisReservation.push(details);
